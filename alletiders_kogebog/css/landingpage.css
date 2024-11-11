@@ -4,7 +4,7 @@
     
 }
 
-:root{
+:root{ /*Bestemmer vores standart farver*/
     --grå: #d0cfcb;
     --hvid: #F6F6F6;
     --lysorange: #e2903a;
@@ -12,7 +12,7 @@
     --brunroed: #B23902;
 }
 
-.logo{
+.logo{ /*Sætter logoet i midten af midten, og sørger for den ligger over alt*/
     position: absolute;
     top: 15%;
     left: 50%;
@@ -24,18 +24,19 @@ header{
     justify-content: center;
 }
 
-
-header img {
+/*Sørger for vores billede i headeren kommer bag ved alt, og fylder helt ud på skærmen*/
+header img { 
     max-width: 100%;
     z-index: -1;
   }
+  /*Vores søge ikon, sørger for cursor ændrer sig til pointer når du er over den*/
 .søge{
     position: absolute;
     top: 40px;
     right: 140px;
-    font-size: 30px; /* Adjust icon size */
-    color: var(--hvid); /* Matches text color */
-    z-index: 1; /* Place above background image */
+    font-size: 30px; 
+    color: var(--hvid); 
+    z-index: 1; 
     cursor: pointer;
 }
 
@@ -95,9 +96,9 @@ header img {
     display: inline-block;
     top: 40px;
     right: 65px;
-    font-size: 30px; /* Adjust icon size */
-    color: var(--hvid); /* Matches text color */
-    z-index: 1; /* Place above background image */
+    font-size: 30px; 
+    color: var(--hvid); 
+    z-index: 1; 
     text-decoration: none;
     cursor: pointer;
 }

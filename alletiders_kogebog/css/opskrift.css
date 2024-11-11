@@ -1,3 +1,180 @@
 *{
     margin: 0;
+    padding: 0;
+    
 }
+
+:root{ /*Bestemmer vores standart farver*/
+    --grå: #d0cfcb;
+    --hvid: #F6F6F6;
+    --lysorange: #e2903a;
+    --morkorange: #EB5C00;
+    --brunroed: #B23902;
+}
+
+.logo{ /*Sætter logoet i midten af midten, og sørger for den ligger over alt*/
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+
+/*Sørger for vores billede i headeren kommer bag ved alt, og fylder helt ud på skærmen*/
+header img { 
+    max-width: 100%;
+    z-index: -1;
+  }
+  /*Vores søge ikon, sørger for cursor ændrer sig til pointer når du er over den*/
+.søge{
+    position: absolute;
+    top: 40px;
+    right: 140px;
+    font-size: 30px; 
+    color: var(--hvid); 
+    z-index: 1; 
+    cursor: pointer;
+}
+
+
+.søgefelt{
+    position: absolute;
+    top: 5px;
+    left: -250px;
+    color: #f6f6f6;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.søgefelt::before{
+    content: "";
+    position: absolute;
+    top:-20px;
+    left: 95px;
+    animation: slideSide 1s ease;
+}
+
+.søgefelt input{
+    list-style: none;
+    padding: 5px 20px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: var(--hvid);
+    animation: slideSide 1s ease;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: "Cinzel", serif;
+}
+@keyframes slideSide{
+    from{
+        opacity:0;
+        transform: translateX(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.søge i:hover input{
+    opacity: 1;
+    transform: all 1s ease;
+}
+.søge:hover .søgefelt{
+    display: flex;
+}
+
+
+.burger{
+    position: absolute;
+    display: inline-block;
+    top: 40px;
+    right: 65px;
+    font-size: 30px; 
+    color: var(--hvid); 
+    z-index: 1; 
+    text-decoration: none;
+    cursor: pointer;
+}
+.dropdown{
+    position: absolute;
+    top: 50px;
+    left: -90px;
+    color: #f6f6f6;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.dropdown::before{
+    content: "";
+    position: absolute;
+    top:-20px;
+    left: 95px;
+    border: 10px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    animation: slideDown 1s ease;
+}
+
+.dropdown ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: slideDown 1s ease;
+    border-radius: 5px;
+}
+@keyframes slideDown{
+    from{
+        opacity:0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.burger i:hover ul{
+    opacity: 1;
+    transform: all 1s ease;
+}
+
+.dropdown ul li{
+    padding: 5px 40px;
+}
+.dropdown ul li a{
+    font-family: "Cinzel", serif;
+    color: #F6F6F6;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+.burger:hover .dropdown{
+    display: flex;
+}
+.dropdown li:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+body{
+    background-color: #f6f6f6;
+  }
+
+  footer{
+    background-color:#e2903a;
+    padding: 20px;
+    color:#F6F6F6;
+  }
+
+  .footer p{
+    font-family: Arial, Helvetica, sans-serif;
+  }     
