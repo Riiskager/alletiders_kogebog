@@ -45,6 +45,7 @@ header img {
     top: -8px;
     right: 50px;
     animation: glidUd 1s ease;
+ 
 }
 @keyframes glidUd{
     from{
@@ -55,7 +56,7 @@ header img {
     }
 }
 
-.søgefelt i:hover input{
+.søge i:hover input{
     opacity: 1;
     transform: all 1s ease;
 }
