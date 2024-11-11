@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Cinzel", serif;
 }
 
 :root{
@@ -11,6 +12,15 @@
     --brunroed: #B23902;
 }
 
+.logo{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 540px;
+    top: 10px;
+    max-width: 150px;
+    z-index: 2;
+}
 
 header img {
     max-width: 100%;
@@ -19,7 +29,7 @@ header img {
 .søge{
     position: absolute;
     top: 40px;
-    right: 120px;
+    right: 140px;
     font-size: 30px; /* Adjust icon size */
     color: var(--hvid); /* Matches text color */
     z-index: 1; /* Place above background image */
@@ -31,7 +41,7 @@ header img {
     position: absolute;
     display: inline-block;
     top: 40px;
-    right: 40px;
+    right: 65px;
     font-size: 30px; /* Adjust icon size */
     color: var(--hvid); /* Matches text color */
     z-index: 1; /* Place above background image */
@@ -40,8 +50,8 @@ header img {
 }
 .dropdown{
     position: absolute;
-    top: 30px;
-    left: -40px;
+    top: 40px;
+    left: -90px;
     color: #f6f6f6;
     display: none;
     align-items: center;
@@ -53,17 +63,32 @@ header img {
     list-style: none;
     padding: 0;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.2)
-
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: slideDown 1s ease;
+}
+@keyframes slideDown{
+    from{
+        opacity:0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.burger i:hover ul{
+    opacity: 1;
+    transform: all 1s ease;
 }
 
 .dropdown ul li{
-    padding: 15px 10px;
+    padding: 5px 40px;
 }
 .dropdown ul li a{
     color: #F6F6F6;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 500;
 }
 .burger:hover .dropdown{
     display: flex;
@@ -71,6 +96,7 @@ header img {
 .dropdown li:hover{
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 
 
 body{
