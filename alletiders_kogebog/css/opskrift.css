@@ -14,6 +14,7 @@
     --lysorange: #e2903a;
     --morkorange: #EB5C00;
     --brunroed: #B23902;
+    --opkriftgraa: #eaeaea;
 }
 
 .logo{ /*Sætter logoet i midten af midten, og sørger for den ligger over alt*/
@@ -185,9 +186,9 @@ body{
 
 
 #dumplings{
-        width: 350px;
+        width: 130%;
         height: auto;
-        margin-left: 100px;
+        margin-left: 16%;
         border-radius: 50%;
 }
 
@@ -196,7 +197,7 @@ body{
 }
 
 #infographic{
-width: 500px;
+width: 160%;
 height: auto;
 margin-left: 30px;
 margin-top: 40px;
@@ -226,23 +227,41 @@ h1{
     color: var(--brunroed);
     font-size: small;
     display: flex;
-    gap: 100px;
-    margin-left: 300px;
-    margin-top: 40px;
+    gap: 32%;
+    margin-left: 25%;
+    margin-top: 10%;
 }
 
 .tekst{
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--brunroed);
-    background-color: var(--grå);
+    margin-top: 4%;
+    margin-left: 12%;
+    margin-right: 4%;
+    gap: 2%;
 }
 
 .ingredienser{
+    width: 40%;
+    height: 30%;
+    background-color: var(--opkriftgraa);
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    line-height: 2;
 }
 
 .fremgangsmåde{
-    width: 30%;
+    width: 40%;
+    text-align:justify;
+    background-color: var(--opkriftgraa);
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    line-height: 1.5;
 }
 
 main{
