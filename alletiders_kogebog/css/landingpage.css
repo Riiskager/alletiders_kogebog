@@ -229,6 +229,7 @@ main{
     scroll-snap-align: center;
     display: block;
     color: #B23902;
+    overflow: hidden;
     }
 .slide p{
     font-family: "cinzel", serif;
@@ -240,6 +241,11 @@ main{
 
     .slide img{
         border-radius: 50%;
+        transition: 0.5s ease;
+        object-fit: cover;
+    }
+    .slide img:hover{
+        transform: scale(1.05)
     }
 
     .carousel::-webkit-scrollbar{
@@ -250,6 +256,7 @@ main{
     .række3{
         background-color: #e2903a;
         display: flex;
+        border-bottom: 8px solid #d0cfcb;
     }
     .række3 img{
         border-radius: 50%;
