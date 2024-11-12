@@ -199,7 +199,7 @@ body {
     margin-top: 60px;
     /* Afstand mellem headeren og billederne */
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     /* Afstand mellem billeder og footer */
 }
 
@@ -243,7 +243,7 @@ body {
     /* Juster størrelsen efter behov */
     color: #B23902;
     /* Vælg en farve der passer */
-    margin-bottom: 20px;
+    margin-bottom: px;
     /* Giver luft mellem teksten og billedgalleriet */
     margin-left: 150px;
     /* Justerer venstre margen, hvis du ønsker lidt indrykning */
@@ -255,7 +255,7 @@ body {
     color: #B23902;
     margin-top: 100px;
     /* Øg afstanden her */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: 72px;
 }
 
@@ -305,8 +305,15 @@ body {
     display: inline-block;
     float: right;
     /* Flytter knappen helt til højre */
-    margin-right: 20px;
+    margin-right: 15px;
     /* Tilføj eventuel ekstra margen fra højre */
+}
+
+.filter-container {
+    margin-left: auto;
+    /* Skubber knappen helt til højre */
+    margin-right: 54px;
+    /* Juster afstand fra højre kant */
 }
 
 footer {
