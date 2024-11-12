@@ -237,6 +237,11 @@ main{
     display: flex;
     justify-content: center;
 }
+.opskriftmængde{
+    display: flex;
+    justify-content: center;
+}
+
     
 
     .slide img{
