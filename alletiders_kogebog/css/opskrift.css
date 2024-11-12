@@ -4,6 +4,10 @@
     
 }
 
+/* Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@400..900&display=swap');
+
+
 :root{ /*Bestemmer vores standart farver*/
     --grå: #d0cfcb;
     --hvid: #F6F6F6;
@@ -179,6 +183,15 @@ body{
     font-family: Arial, Helvetica, sans-serif;
   }     
 
+
+.kolonne1{
+
+}
+
+
+.kolonne2{
+color: var(--brunroed);
+}
 
 
   /* Tablets (min. bredde: 600px) */
