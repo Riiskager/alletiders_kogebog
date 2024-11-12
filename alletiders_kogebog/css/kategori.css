@@ -182,21 +182,37 @@ header img {
 
 body {
     background-color: #f6f6f6;
+
 }
 
+/* Container til billeder */
 .rundebilleder {
+    display: grid;
+    /* Bruger grid layout */
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 kolonner */
+    gap: 100px;
+    /* Afstand mellem billederne */
+    justify-items: center;
+    /* Centrerer billederne horisontalt i hver kolonne */
+    grid-auto-rows: 100px;
+    /* Bestemmer højden på hver række */
+    width: 100%;
+    margin-bottom: 50px;
+    /* Sørger for, at containeren fylder hele bredden */
+}
+
+/* Styling til billederne */
+.rundebilleder img {
+    width: 130px;
+    /* Fast bredde */
+    height: 130px;
+    /* Fast højde */
     border-radius: 50%;
-}
-
-.rundebilleder {
-    display: flex;
-    gap: 10px;
-}
-
-.rundebilleder {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    /* Gør billederne runde */
+    object-fit: cover;
+    /* Sikrer, at billederne fylder cirklerne uden at blive forvrænget */
+    display: block;
 }
 
 footer {
