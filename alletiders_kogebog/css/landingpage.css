@@ -230,6 +230,7 @@ main{
     display: block;
     color: #B23902;
     overflow: hidden;
+    padding: 10px;
     }
 .slide p{
     font-family: "cinzel", serif;
@@ -250,7 +251,8 @@ main{
         object-fit: cover;
     }
     .slide img:hover{
-        transform: scale(1.05)
+        transform: scale(1.05);
+        cursor: pointer;
     }
 
     .carousel::-webkit-scrollbar{
