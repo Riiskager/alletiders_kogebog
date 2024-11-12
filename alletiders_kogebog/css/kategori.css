@@ -199,7 +199,7 @@ body {
     margin-top: 60px;
     /* Afstand mellem headeren og billederne */
     width: 100%;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
     /* Afstand mellem billeder og footer */
 }
 
@@ -235,6 +235,78 @@ body {
     /* Tekststørrelse */
     color: #B23902;
     /* Tekstfarve */
+}
+
+.overskrift {
+    text-align: left;
+    font-size: 30px;
+    /* Juster størrelsen efter behov */
+    color: #B23902;
+    /* Vælg en farve der passer */
+    margin-bottom: 20px;
+    /* Giver luft mellem teksten og billedgalleriet */
+    margin-left: 150px;
+    /* Justerer venstre margen, hvis du ønsker lidt indrykning */
+}
+
+.overskrift {
+    text-align: left;
+    font-size: 30px;
+    color: #B23902;
+    margin-top: 100px;
+    /* Øg afstanden her */
+    margin-bottom: 20px;
+    margin-left: 72px;
+}
+
+/* Container for filter */
+.filter-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styling af filtreringsknappen */
+.filter-button {
+    background-color: #e2903a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #b23902;
+}
+
+/* Dropdown-menu skjult som standard */
+.filter-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.filter-container {
+    margin-bottom: 25px;
+    /* Skaber plads mellem knappen og billederne */
+    margin-top: -30px;
+    /* Juster dette for at rykke knappen opad */
+}
+
+.filter-container {
+    position: relative;
+    display: inline-block;
+    float: right;
+    /* Flytter knappen helt til højre */
+    margin-right: 20px;
+    /* Tilføj eventuel ekstra margen fra højre */
 }
 
 footer {
