@@ -219,11 +219,14 @@ h1{
 /* redigering af små features */
 .smaa_features{
     display: flex;
+    margin-top: 6%;
+    margin-left: 25%;
 }
 
 /* redigering af stjeneratting */
 .starrating{
     color: var(--grå);
+    margin-right: 15%;
   }
 
 .checked{
@@ -339,7 +342,7 @@ h1{
     display: flex;
     gap: 26%;
     margin-left: 28%;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 .tekst{
