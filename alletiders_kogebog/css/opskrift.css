@@ -184,15 +184,46 @@ body{
   }     
 
 
-.kolonne1{
+#dumplings{
+        width: 350px;
+        height: auto;
+        margin-left: 100px;
+        border-radius: 50%;
+}
 
+#infographic, #dumplings{
+    display: block;
+}
+
+#infographic{
+width: 500px;
+height: auto;
+margin-left: 30px;
+margin-top: 40px;
+margin-bottom: 40px;
 }
 
 
-.kolonne2{
-color: var(--brunroed);
+h1{
+    font-family: "Cinzel", serif;
+    font-size:xx-large;
+    margin-left: 280px;
+    margin-top: 20px;
+    color: var(--brunroed);
 }
 
+.starrating{
+    margin-left: 350px;
+    margin-top: 20px;
+  }
+
+.checked{
+    color: var(--lysorange);
+}
+
+main{
+    display: flex;
+}
 
   /* Tablets (min. bredde: 600px) */
 @media (min-width: 600px) {
