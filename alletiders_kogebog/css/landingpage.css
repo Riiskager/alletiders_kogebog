@@ -181,9 +181,25 @@ body{
   } 
 
 
+main{
+    justify-content: space-between;
+}
 
-
-
+  .carouse2 {
+    position: relative;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    z-index: 3;
+    right: 0;
+    }
+    .carouse2::-webkit-scrollbar{
+        display: none;
+    }
 
 
   .carousel {
@@ -191,7 +207,7 @@ body{
     margin-top: 2%;
     display: flex;
     flex-wrap: nowrap;
-    gap: 5%;
+    gap: 3%;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -202,7 +218,7 @@ body{
         color: #B23902;
         font-size: x-large;
         margin-left: 3%;
-        margin-top: 5%;
+        margin-top: 2%;
     }
     
   .slide {
@@ -211,10 +227,20 @@ body{
     margin-bottom: 1rem;
     scroll-snap-align: center;
     display: block;
-    align-items: center; /*gør intet*/ 
+    color: #B23902;
     }
+.slide p{
+    font-family: "cinzel", serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
     
 
     .slide img{
         border-radius: 50%;
+    }
+
+    .carousel::-webkit-scrollbar{
+        display: none;
     }
