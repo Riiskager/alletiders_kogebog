@@ -221,6 +221,30 @@ h1{
     color: var(--lysorange);
 }
 
+.overskifter{
+    font-family: "Cinzel", serif;
+    color: var(--brunroed);
+    font-size: small;
+    display: flex;
+    gap: 100px;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+.tekst{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--brunroed);
+    background-color: var(--grå);
+}
+
+.ingredienser{
+}
+
+.fremgangsmåde{
+    width: 30%;
+}
+
 main{
     display: flex;
 }
