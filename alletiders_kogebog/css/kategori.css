@@ -185,44 +185,32 @@ body {
 }
 
 .rundebilleder {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 60px;
-    /* Tilføjer afstand mellem headeren og billederne */
-}
-
-/* Container til billeder */
-.rundebilleder {
     display: grid;
-    /* Bruger grid layout */
     grid-template-columns: repeat(5, 1fr);
     /* 5 kolonner */
-    gap: 80px;
-    /* Afstand mellem billederne */
+    gap: 20px;
+    /* Afstand mellem både billederne og rækkerne */
+    grid-row-gap: 40px;
+    /* Afstand mellem rækkerne */
     justify-items: center;
-    /* Centrerer billederne horisontalt i hver kolonne */
-    grid-auto-rows: 150px;
-    /* Bestemmer højden på hver række */
+    /* Centrerer billederne horisontalt */
+    grid-auto-rows: auto;
+    /* Højden justeres automatisk afhængigt af billedet og teksten */
+    margin-top: 60px;
+    /* Afstand mellem headeren og billederne */
     width: 100%;
-    margin-bottom: 110px;
-    /* Sørger for, at containeren fylder hele bredden */
+    margin-bottom: 90px;
+    /* Afstand mellem billeder og footer */
+}
+
+/* Container for hvert billede og tekst */
+.billede-container {
+    text-align: center;
+    /* Centrerer både billede og tekst */
 }
 
 /* Styling til billederne */
-.rundebilleder img {
-    width: 150px;
-    /* Fast bredde */
-    height: 150px;
-    /* Fast højde */
-    border-radius: 50%;
-    /* Gør billederne runde */
-    object-fit: cover;
-    /* Sikrer, at billederne fylder cirklerne uden at blive forvrænget */
-    display: block;
-}
-
-.rundebilleder img {
+.billede-container img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -233,9 +221,20 @@ body {
     /* Gør effekten glidende og tilføjer varighed */
 }
 
-.rundebilleder img:hover {
+/* Zoom-effekt på billederne */
+.billede-container img:hover {
     transform: scale(1.1);
     /* Forstørrer billedet med 10% */
+}
+
+/* Styling af teksten under billederne */
+.billede-container p {
+    margin-top: 15px;
+    /* Afstand mellem billede og tekst */
+    font-size: 20px;
+    /* Tekststørrelse */
+    color: #B23902;
+    /* Tekstfarve */
 }
 
 footer {
