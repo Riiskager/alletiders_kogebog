@@ -173,8 +173,48 @@ body{
     background-color:#e2903a;
     padding: 20px;
     color:#F6F6F6;
+    margin-top: 10%;
   }
 
   .footer p{
     font-family: Arial, Helvetica, sans-serif;
   } 
+
+
+
+
+
+
+
+  .carousel {
+    position: relative;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    z-index: 3;
+    }
+    main h1{
+        font-family: "Cinzel", serif;
+        color: #B23902;
+        font-size: x-large;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+    
+  .slide {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+    scroll-snap-align: center;
+    display: block;
+    align-items: center; /*gør intet*/ 
+    }
+    
+
+    .slide img{
+        border-radius: 50%;
+    }
