@@ -185,10 +185,12 @@ body{
   }     
 
 
+
+  
 #dumplings{
-        width: 130%;
+        width: 80%;
         height: auto;
-        margin-left: 16%;
+        margin-left: 18%;
         border-radius: 50%;
 }
 
@@ -197,53 +199,163 @@ body{
 }
 
 #infographic{
-width: 160%;
+width: 110%;
 height: auto;
-margin-left: 30px;
-margin-top: 40px;
-margin-bottom: 40px;
+margin-left: 8%;
+margin-top: 8%;
+margin-bottom: 5%;
+border: 3px solid var(--opkriftgraa);
 }
 
 
 h1{
     font-family: "Cinzel", serif;
     font-size:xx-large;
-    margin-left: 280px;
-    margin-top: 20px;
+    margin-left: 30%;
+    margin-top: 6%;
     color: var(--brunroed);
 }
 
+/* redigering af små features */
+.smaa_features{
+    display: flex;
+    margin-top: 6%;
+    margin-left: 25%;
+}
+
+/* redigering af stjeneratting */
 .starrating{
-    margin-left: 350px;
-    margin-top: 20px;
+    color: var(--grå);
+    margin-right: 15%;
   }
 
 .checked{
     color: var(--lysorange);
 }
 
+/* redigering af antal personer */
+.minus{
+    color: var(--hvid);
+    background-color: var(--lysorange);
+    border: none;
+    width: 15%;
+    cursor: pointer;
+    height: auto;
+}
+
+.plus{
+    color: var(--hvid);
+    background-color: var(--lysorange);
+    border: none;
+    width: 15%;
+    cursor: pointer;
+    height: auto;
+}
+
+.antal{
+    color: var(--brunroed);
+    background-color: var(--hvid);
+    border: 2px solid var(--lysorange);
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+
+.antal_personer{
+    margin: 0;
+    padding: 0;
+}
+
+/* redigering af holdt skærm tændt*/
+.skaerm_taendt{
+    display: block;
+    position: relative;
+    padding-left: 3%;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--brunroed);
+  }
+  
+  /* Hide the browser's default checkbox */
+  .skaerm_taendt input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: var(--hvid);
+    border: 2px solid var(--grå);
+  }
+
+  /* Hover farveskift */
+.skaerm_taendt:hover input ~ .checkmark {
+    background-color: var(--grå);
+  }
+  
+  /* checkbox is checked redigering */
+  .skaerm_taendt input:checked ~ .checkmark {
+    background-color: var(--lysorange);
+  }
+  
+  /* Create the checkmark indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .skaerm_taendt input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* checkmark indicator */
+  .skaerm_taendt .checkmark:after {
+    left: 3px;
+    width: 5px;
+    height: 8px;
+    border: solid var(--hvid);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
 .overskifter{
     font-family: "Cinzel", serif;
     color: var(--brunroed);
     font-size: small;
     display: flex;
-    gap: 32%;
-    margin-left: 25%;
-    margin-top: 10%;
+    gap: 26%;
+    margin-left: 28%;
+    margin-top: 2%;
 }
 
 .tekst{
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--brunroed);
-    margin-top: 4%;
-    margin-left: 12%;
-    margin-right: 4%;
+    margin-top: 2%;
+    margin-left: 20%;
     gap: 2%;
+    margin-right: 2%;
 }
 
 .ingredienser{
-    width: 40%;
     height: 30%;
     background-color: var(--opkriftgraa);
     padding-right: 5%;
@@ -251,17 +363,19 @@ h1{
     padding-bottom: 3%;
     padding-left: 5%;
     line-height: 2;
+    width: 50%;
 }
 
 .fremgangsmåde{
-    width: 40%;
-    text-align:justify;
+    text-align: unset;
     background-color: var(--opkriftgraa);
     padding-right: 5%;
     padding-top: 3%;
     padding-bottom: 3%;
     padding-left: 5%;
     line-height: 1.5;
+    margin-right: 1%;
+    width: 70%;
 }
 
 main{
