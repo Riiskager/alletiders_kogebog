@@ -395,6 +395,7 @@ main{
 
 
 /*Telefon*/
+/* header stuff */
 @media (max-width: 768px){
     .logo{
         width: 25%;
@@ -414,6 +415,60 @@ main{
         padding-left: 1px;
         padding-right: 1px;
     }
+
+/* site indghold redigering */
+main{
+    display: block;
+}
+
+#dumplings{
+    width: 90%;
+    margin-left: 6%;
+}
+
+
+#infographic{
+    width: 90%;
+    margin-left: 5.5%;
+    display: none;
+}
+
+h1{
+    margin-left: 2%;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.smaa_features{
+    margin-left: 2%;
+}
+
+.starrating{
+    margin-right: 2%;
+}
+
+.overskifter{
+    display: none;
+}
+
+.antal_personer{
+    text-align: center;
+}
+
+.tekst{
+    margin-left: 3%;
+    display: block;
+}
+
+.ingredienser{
+    width: 90%;
+    margin-bottom: 3%;
+}
+
+.fremgangsmåde{
+    width: 90%;
+}
+
 }
 
 
