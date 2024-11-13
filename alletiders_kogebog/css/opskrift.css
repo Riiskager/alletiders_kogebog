@@ -393,13 +393,55 @@ main{
 }
 
 
-/* Tablets (min. bredde: 600px) */
-@media (min-width: 600px) {
+/* Alt under 600px er telefon - telefon redigering */
+@media (max-width: 600px) {
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#dumplings{
+    width: 90%;
+    order: 1;
+    margin-left: 12%;
+}
+
+.kolonne2{
+    order: 2;
+}
+
+.smaa_features{
+    order: 3;
+}
+
+#ingredienser{
+    order: 4;
+}
+
+#fremgangsmåde{
+    order: 5;
+}
+
+.ingredienser{
+    order: 6;
+}
+
+.fremgangsmåde{
+    order: 7;
+}
+
+#infographic{
+    order: 8;
+    width: 90%;
+    margin-left: 12%;
+}
+
 
 }
 
 
-/* Laptops og større skærme (min. bredde: 1024px) */
-@media (min-width: 1024px) {
+/* Alt under 1024px er tablet - tablet redigering */
+@media (max-width: 1024px) {
     
 }
