@@ -9,6 +9,6 @@ function setHeaderImage() {
   } else if (window.innerWidth >= 768) {
     headerImage.src = "img/header_tablet.png"; // Tablet image
   } else {
-    headerImage.src = "img/header-mobile.png"; // Mobile image
+    headerImage.src = "img/header_tlf.png"; // Mobile image
   }
 }
