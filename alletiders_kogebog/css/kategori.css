@@ -385,4 +385,14 @@ footer {
         margin: 5% 0 5% 10%;
 
     }
+
+
+    /* emil og ralle 
+    .rundebilleder {
+        display: flex;
+        flex-wrap: wrap;
+    } */
+    #nrfem {
+        display: none;
+    }
 }
