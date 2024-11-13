@@ -271,6 +271,7 @@ main{
     .række3 img{
         border-radius: 50%;
         margin: 5% 10% 5% 10%;
+        width: 500px;
     }
     .Tekst h1{
         color: #F6F6F6;
@@ -288,7 +289,7 @@ main{
     }
 
 
-    @media (min-width: 768px){
+    @media (max-width: 1024px){
         
     .body{
         color: black;
@@ -296,10 +297,31 @@ main{
     .logo{ 
          position: absolute;
         top: 10%;
-        left: 50%;
-        width: 15%;
+        left: 85%;
+        width: 25%;
         transform: translate(-50%, -50%);
         z-index: 2;
     } 
+    .søge{
+        left: 20%;
+    }
+    .søgefelt{
+        left: 10%;
+        top: 5%;
+    }
+    .burger{
+        left:10%;
+        width: 50px;
+    }
+    .header_img img{
+        display: flex;
+    }
+    .Tekst{
+        width: 40%;
+    }
+    .række3 img{
+        width: 400px;
+        margin: 5% 0 5% 10%;
         
+    }
     }
