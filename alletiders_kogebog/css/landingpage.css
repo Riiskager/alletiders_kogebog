@@ -279,6 +279,7 @@ main{
         font-weight: 500;
         margin: 20px 20px 0 20px;
         font-size: xx-large;
+
     }
     .Tekst p{
         color: #F6F6F6;
@@ -291,9 +292,7 @@ main{
 
     @media (max-width: 1024px){
         
-    .body{
-        color: black;
-    }
+
     .logo{ 
          position: absolute;
         top: 10%;
@@ -328,7 +327,35 @@ main{
 
     @media (max-width: 768px){
         .logo{
-            width: 30px;
+            width: 25%;
+            left: 15%;
+            top: 7%;
         }
+        .burger{
+            left: 85%
+        }
+        .søge{
+            left: 75%
+        }
+        .søgefelt{
+            left: -200px;
+        }
+        .søgefelt input{
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+         .række3{
+        display: block;
+        align-items: center;
+    }
+    .række3 h1{
+        width: 100%;
+    }
+    .række3 img{
+        width: 100%;
+        margin: 0;
+    }
+
 
     }
+ 
