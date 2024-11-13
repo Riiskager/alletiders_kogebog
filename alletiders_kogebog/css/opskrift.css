@@ -226,6 +226,12 @@ h1{
     color: var(--brunroed);
 }
 
+/* Gem swirls på pc */
+#swirl1,
+#swirl2{
+    display: none;
+}
+
 /* redigering af små features */
 .smaa_features{
     display: flex;
@@ -354,6 +360,7 @@ h1{
     margin-top: 2%;
 }
 
+/* overskirfter til telefon */
 h3{
     display: none;
 }
@@ -427,10 +434,39 @@ main{
 }
 
 #dumplings{
-    width: 90%;
-    margin-left: 6%;
+    width: 60%;
+    margin-left: 20%;
 }
 
+/* swirls og dumplings billede */
+.billeder{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5%;
+}
+
+/* Display the swirls and center dumplings image */
+#swirl1{
+    display: block;
+    width: 20%;
+    height: auto;
+    margin-left: 0%;
+}
+
+#dumplings {
+    width: 52%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+
+#swirl2 {
+    display: block;
+    width: 30%;
+    height: auto;
+    margin-right: -10%;
+}
 
 #infographic{
     width: 90%;
@@ -447,10 +483,17 @@ h1{
 
 .smaa_features{
     margin-left: 2%;
+    margin-top: 8%;
 }
 
 .starrating{
     margin-right: 2%;
+    width: 35%;
+}
+
+.skaerm_taendt{
+    padding-left: 3%;
+    text-align: center;
 }
 
 .overskifter{
