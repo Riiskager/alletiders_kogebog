@@ -184,23 +184,24 @@ body {
     background-color: #f6f6f6;
 }
 
+/* Justér galleriet af billeder */
 .rundebilleder {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     /* 5 kolonner */
     gap: 20px;
-    /* Afstand mellem både billederne og rækkerne */
+    /* Afstand mellem billederne og rækkerne */
     grid-row-gap: 40px;
     /* Afstand mellem rækkerne */
     justify-items: center;
     /* Centrerer billederne horisontalt */
     grid-auto-rows: auto;
     /* Højden justeres automatisk afhængigt af billedet og teksten */
-    margin-top: 60px;
-    /* Afstand mellem headeren og billederne */
+    margin-top: 5px;
+    /* Mindre afstand mellem overskriften og billederne */
     width: 100%;
-    margin-bottom: 40px;
-    /* Afstand mellem billeder og footer */
+    margin-bottom: 20px;
+    /* Mindre afstand mellem billederne og næste sektion */
 }
 
 /* Container for hvert billede og tekst */
@@ -209,14 +210,14 @@ body {
     /* Centrerer både billede og tekst */
 }
 
-/* Styling til billederne */
+/* Styling af billederne */
 .billede-container img {
     width: 160px;
     height: 160px;
     border-radius: 50%;
     /* Gør billederne runde */
     object-fit: cover;
-    /* Sikrer, at billedet fylder cirklen uden at blive forvrænget */
+    /* Sikrer at billedet fylder cirklen uden at blive forvrænget */
     transition: transform 0.3s ease;
     /* Gør effekten glidende og tilføjer varighed */
 }
@@ -237,83 +238,68 @@ body {
     /* Tekstfarve */
 }
 
-.overskrift {
-    text-align: left;
+/* Styling af overskrifterne */
+main h2.overskrift_retter,
+main h2.overskrift_salater,
+main h2.overskrift_tilbehor {
     font-size: 30px;
-    /* Juster størrelsen efter behov */
     color: #B23902;
-    /* Vælg en farve der passer */
-    margin-bottom: px;
-    /* Giver luft mellem teksten og billedgalleriet */
-    margin-left: 150px;
-    /* Justerer venstre margen, hvis du ønsker lidt indrykning */
+    text-align: left;
+    /* Venstrestillet */
+    margin-left: 6%;
+    /* Juster venstre margen efter behov */
+    margin-bottom: 5px;
+    /* Mindre afstand mellem overskriften og billederne */
 }
 
-.overskrift {
-    text-align: left;
-    font-size: 30px;
-    color: #B23902;
-    margin-top: 100px;
-    /* Øg afstanden her */
-    margin-bottom: 10px;
-    margin-left: 72px;
+main h2.overskrift_retter {
+    margin-top: 10px;
+    /* Mindre afstand fra toppen */
+}
+
+.overskrift_salater {
+    font-size: 20px;
+    /* Juster størrelse */
+    margin-top: 10px;
+    /* Mindre afstand mellem overskrift og billeder */
+}
+
+.overskrift_tilbehor {
+    font-size: 20px;
+    margin-top: 10px;
+    /* Mindre afstand til billederne */
+    margin-bottom: 40px;
+    /* Giver plads til bunden */
 }
 
 /* Container for filter */
 .filter-container {
-    position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    /* Holder knappen til højre */
+    margin-top: -10px;
+    /* Juster afstanden fra toppen */
+    margin-bottom: 20px;
+    /* Mindre afstand mellem knappen og billeder */
+    margin-right: 5%;
+    /* Denne værdi kan justeres for at justere knappen mod midten */
 }
 
 /* Styling af filtreringsknappen */
 .filter-button {
     background-color: #e2903a;
     color: white;
-    padding: 10px 20px;
-    font-size: 20px;
+    padding: 10px 30px;
+    font-size: 13px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
+/* Hover-effekt for filtreringsknappen */
 .filter-button:hover {
     background-color: #b23902;
-}
-
-/* Dropdown-menu skjult som standard */
-.filter-dropdown {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    z-index: 1;
-}
-
-.filter-container {
-    margin-bottom: 25px;
-    /* Skaber plads mellem knappen og billederne */
-    margin-top: -30px;
-    /* Juster dette for at rykke knappen opad */
-}
-
-.filter-container {
-    position: relative;
-    display: inline-block;
-    float: right;
-    /* Flytter knappen helt til højre */
-    margin-right: 15px;
-    /* Tilføj eventuel ekstra margen fra højre */
-}
-
-.filter-container {
-    margin-left: auto;
-    /* Skubber knappen helt til højre */
-    margin-right: 54px;
-    /* Juster afstand fra højre kant */
 }
 
 footer {
