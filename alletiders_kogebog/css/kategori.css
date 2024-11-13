@@ -204,6 +204,11 @@ body {
     /* Mindre afstand mellem billederne og næste sektion */
 }
 
+/*nedenunder er farven på stjernerne */
+.checked {
+    color: var(--lysorange);
+}
+
 /* Container for hvert billede og tekst */
 .billede-container {
     text-align: center;
