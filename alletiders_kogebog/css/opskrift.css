@@ -354,6 +354,10 @@ h1{
     margin-top: 2%;
 }
 
+h3{
+    display: none;
+}
+
 /* redigering af tekster */
 .tekst{
     display: flex;
@@ -364,6 +368,7 @@ h1{
     gap: 2%;
     margin-right: 2%;
 }
+
 
 .ingredienser{
     height: 30%;
@@ -433,6 +438,7 @@ main{
     display: none;
 }
 
+
 h1{
     margin-left: 2%;
     font-size: xx-large;
@@ -455,18 +461,43 @@ h1{
     text-align: center;
 }
 
+
+#ingredienser_mobil{
+font-size: 140%;
+color: var(--brunroed);
+margin-left: 5%;
+font-family: "Cinzel", serif;
+margin-top: 8%;
+display: block;
+}
+
+#fremgangsmåde_mobil{
+    font-size: 140%;
+color: var(--brunroed);
+margin-left: 5%;
+font-family: "Cinzel", serif;
+margin-top: 8%;
+margin-bottom: 2.5%;
+display: block;
+}
+
 .tekst{
     margin-left: 3%;
     display: block;
+    margin-right: 3%;
 }
 
 .ingredienser{
     width: 90%;
-    margin-bottom: 3%;
+    font-size: 120%;
+    padding-left: 6%;
 }
 
 .fremgangsmåde{
     width: 90%;
+    font-size: 120%;
+    padding-left: 6%;
+    margin-bottom: 3%;
 }
 
 }
@@ -499,6 +530,6 @@ h1{
     }
     .Tekst{
         width: 40%;
-    }
+         }
 
-    }
+         }
