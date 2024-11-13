@@ -197,10 +197,10 @@ body {
     /* Centrerer billederne horisontalt */
     grid-auto-rows: auto;
     /* Højden justeres automatisk afhængigt af billedet og teksten */
-    margin-top: 5px;
+    margin-top: 0%;
     /* Mindre afstand mellem overskriften og billederne */
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     /* Mindre afstand mellem billederne og næste sektion */
 }
 
@@ -239,37 +239,37 @@ body {
 }
 
 /* Styling af overskrifterne */
-main h2.overskrift_retter,
-main h2.overskrift_salater,
-main h2.overskrift_tilbehor {
-    font-size: 30px;
+main h2.overskrift_retter {
+    font-size: 35px;
     color: #B23902;
     text-align: left;
     /* Venstrestillet */
-    margin-left: 6%;
+    margin-left: 4.5%;
     /* Juster venstre margen efter behov */
-    margin-bottom: 5px;
+    margin-bottom: -1%;
     /* Mindre afstand mellem overskriften og billederne */
 }
 
-main h2.overskrift_retter {
-    margin-top: 10px;
-    /* Mindre afstand fra toppen */
+main h2.overskrift_salater {
+    font-size: 25px;
+    color: #B23902;
+    text-align: left;
+    /* Venstrestillet */
+    margin-left: 5.3%;
+    /* Juster venstre margen efter behov */
+    margin-bottom: 3px;
+    /* Mindre afstand mellem overskriften og billederne */
 }
 
-.overskrift_salater {
-    font-size: 20px;
-    /* Juster størrelse */
-    margin-top: 10px;
-    /* Mindre afstand mellem overskrift og billeder */
-}
-
-.overskrift_tilbehor {
-    font-size: 20px;
-    margin-top: 10px;
-    /* Mindre afstand til billederne */
-    margin-bottom: 40px;
-    /* Giver plads til bunden */
+main h2.overskrift_tilbehor {
+    font-size: 25px;
+    color: #B23902;
+    text-align: left;
+    /* Venstrestillet */
+    margin-left: 5.3%;
+    /* Juster venstre margen efter behov */
+    margin-bottom: 3px;
+    /* Mindre afstand mellem overskriften og billederne */
 }
 
 /* Container for filter */
