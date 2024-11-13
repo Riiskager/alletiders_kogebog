@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    
+
 }
 
-:root{ /*Bestemmer vores standart farver*/
+:root {
+    /*Bestemmer vores standart farver*/
     --grå: #d0cfcb;
     --hvid: #F6F6F6;
     --lysorange: #e2903a;
@@ -12,55 +13,59 @@
     --brunroed: #B23902;
 }
 
-.logo{ /*Sætter logoet i midten af midten, og sørger for den ligger over alt*/
+.logo {
+    /*Sætter logoet i midten af midten, og sørger for den ligger over alt*/
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
 }
 
 /*Sørger for vores billede i headeren kommer bag ved alt, og fylder helt ud på skærmen*/
-header img { 
+header img {
     max-width: 100%;
     z-index: -1;
-  }
-  /*Vores søge ikon, sørger for cursor ændrer sig til pointer når du er over den*/
-.søge{
+}
+
+/*Vores søge ikon, sørger for cursor ændrer sig til pointer når du er over den*/
+.søge {
     position: absolute;
     top: 40px;
     right: 140px;
-    font-size: 30px; 
-    color: var(--hvid); 
-    z-index: 1; 
+    font-size: 30px;
+    color: var(--hvid);
+    z-index: 1;
     cursor: pointer;
 }
 
 
-.søgefelt{
+.søgefelt {
     position: absolute;
-    top: 5px;
-    left: -250px;
+    top: 2px;
+    left: -230px;
     color: #f6f6f6;
     display: none;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    
+
 }
-.søgefelt::before{
+
+.søgefelt::before {
     content: "";
     position: absolute;
-    top:-20px;
+    top: -20px;
     left: 95px;
     animation: slideSide 1s ease;
 }
 
-.søgefelt input{
+.søgefelt input {
     list-style: none;
     padding: 5px 20px;
     margin-right: 20px;
@@ -72,37 +77,42 @@ header img {
     font-weight: 600;
     font-family: "Cinzel", serif;
 }
-@keyframes slideSide{
-    from{
-        opacity:0;
+
+@keyframes slideSide {
+    from {
+        opacity: 0;
         transform: translateX(10px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0);
     }
 }
-.søge i:hover input{
+
+.søge i:hover input {
     opacity: 1;
     transform: all 1s ease;
 }
-.søge:hover .søgefelt{
+
+.søge:hover .søgefelt {
     display: flex;
 }
 
 
-.burger{
+.burger {
     position: absolute;
     display: inline-block;
     top: 40px;
     right: 65px;
-    font-size: 30px; 
-    color: var(--hvid); 
-    z-index: 1; 
+    font-size: 30px;
+    color: var(--hvid);
+    z-index: 1;
     text-decoration: none;
     cursor: pointer;
 }
-.dropdown{
+
+.dropdown {
     position: absolute;
     top: 50px;
     left: -90px;
@@ -111,19 +121,20 @@ header img {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    
+
 }
-.dropdown::before{
+
+.dropdown::before {
     content: "";
     position: absolute;
-    top:-20px;
+    top: -20px;
     left: 95px;
     border: 10px solid transparent;
     border-bottom-color: rgba(0, 0, 0, 0.2);
     animation: slideDown 1s ease;
 }
 
-.dropdown ul{
+.dropdown ul {
     list-style: none;
     padding: 0;
     text-align: center;
@@ -131,104 +142,217 @@ header img {
     animation: slideDown 1s ease;
     border-radius: 5px;
 }
-@keyframes slideDown{
-    from{
-        opacity:0;
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
         transform: translateY(-10px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-.burger i:hover ul{
+
+.burger i:hover ul {
     opacity: 1;
     transform: all 1s ease;
 }
 
-.dropdown ul li{
+.dropdown ul li {
     padding: 5px 40px;
 }
-.dropdown ul li a{
+
+.dropdown ul li a {
     font-family: "Cinzel", serif;
     color: #F6F6F6;
     text-decoration: none;
     font-size: 17px;
     font-weight: 500;
 }
-.burger:hover .dropdown{
+
+.burger:hover .dropdown {
     display: flex;
 }
-.dropdown li:hover{
+
+.dropdown li:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-
-
-body{
+body {
     background-color: #f6f6f6;
-  }
-
-  footer{
-    background-color:#e2903a;
-    padding: 20px;
-    color:#F6F6F6;
-  }
-
-  .footer p{
-    font-family: Arial, Helvetica, sans-serif;
-  } 
-  @media (max-width: 768px){
-    .logo{
-        width: 25%;
-        left: 15%;
-        top: 7%;
-    }
-    .burger{
-        left: 85%
-    }
-    .søge{
-        left: 75%
-    }
-    .søgefelt{
-        left: -200px;
-    }
-    .søgefelt input{
-        padding-left: 1px;
-        padding-right: 1px;
-    }
 }
-@media (max-width: 1024px){
-        
 
-    .logo{ 
-         position: absolute;
-        top: 10%;
-        left: 85%;
-        width: 25%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-    } 
-    .søge{
-        left: 20%;
-    }
-    .søgefelt{
-        left: 10%;
-        top: 5%;
-    }
-    .burger{
-        left:10%;
-        width: 50px;
-    }
-    .header_img img{
-        display: flex;
-    }
-    .Tekst{
-        width: 40%;
-    }
-    .række3 img{
-        width: 400px;
-        margin: 5% 0 5% 10%;
-        
-    }
-    }
+/* Justér galleriet af billeder */
+.rundebilleder {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 kolonner */
+    gap: 20px;
+    /* Afstand mellem billederne og rækkerne */
+    grid-row-gap: 40px;
+    /* Afstand mellem rækkerne */
+    justify-items: center;
+    /* Centrerer billederne horisontalt */
+    grid-auto-rows: auto;
+    /* Højden justeres automatisk afhængigt af billedet og teksten */
+    margin-top: 5px;
+    /* Mindre afstand mellem overskriften og billederne */
+    width: 100%;
+    margin-bottom: 20px;
+    /* Mindre afstand mellem billederne og næste sektion */
+    cursor: pointer;
+}
+
+/* Container for hvert billede og tekst */
+.billede-container {
+    text-align: center;
+    /* Centrerer både billede og tekst */
+    cursor: pointer;
+}
+
+/* Styling af billederne */
+.billede-container img {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    /* Gør billederne runde */
+    object-fit: cover;
+    /* Sikrer at billedet fylder cirklen uden at blive forvrænget */
+    transition: transform 0.3s ease;
+    /* Gør effekten glidende og tilføjer varighed */
+    cursor: pointer;
+}
+
+/* Zoom-effekt på billederne */
+.billede-container img:hover {
+    transform: scale(1.1);
+    /* Forstørrer billedet med 10% */
+    cursor: pointer;
+}
+
+/* Styling af teksten under billederne */
+.billede-container p {
+    margin-top: 15px;
+    /* Afstand mellem billede og tekst */
+    font-size: 20px;
+    /* Tekststørrelse */
+    color: #B23902;
+    /* Tekstfarve */
+    cursor: pointer;
+    font-family: "Cinzel", serif;
+}
+
+/* Styling af overskrifterne */
+main h2.overskrift_retter,
+main h2.overskrift_salater,
+main h2.overskrift_tilbehor {
+    font-size: 30px;
+    color: #B23902;
+    text-align: left;
+    /* Venstrestillet */
+    margin-left: 6%;
+    /* Juster venstre margen efter behov */
+    margin-top: 80px;
+    /* Mindre afstand mellem overskriften og billederne */
+    font-family: "Cinzel", serif;
+}
+
+main h2.overskrift_retter {
+    margin-top: 0px;
+    /* Mindre afstand fra toppen */
+}
+
+.overskrift_salater {
+    font-size: 20px;
+    /* Juster størrelse */
+    margin-top: 10px;
+    /* Mindre afstand mellem overskrift og billeder */
+}
+
+.overskrift_tilbehor {
+    font-size: 20px;
+    margin-top: 10px;
+    /* Mindre afstand til billederne */
+    margin-bottom: 40px;
+    /* Giver plads til bunden */
+}
+
+
+footer {
+    background-color: #e2903a;
+    padding: 20px;
+    color: #F6F6F6;
+}
+
+.footer p {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.tomprofil {
+    position: relative;
+    left: 60px;          /* Placerer elementet 50px fra venstre kant */
+    top: -10px;           /* Ekstra: juster også placeringen fra toppen */
+}
+
+main h1.info{
+    font-size: 30px;
+    color: #B23902;
+    /* Venstrestillet */
+    margin-left: 6px;
+    /* Juster venstre margen efter behov */
+    margin-bottom: 5px;
+    /* Mindre afstand mellem overskriften og billederne */
+    z-index: 2;
+    position: relative;
+    font-family: "Cinzel", serif;
+}
+main h1.info {
+    margin-top: -210px;
+    /* Mindre afstand fra toppen */
+    margin-left: 495px;
+}
+.checked {
+    color: orange;
+  }
+  /* redigering af stjeneratting */
+.starrating{
+    color: var(--grå);
+    margin-right: 25%;
+    margin-left: 33%;
+  }
+  main h3.præferencer{
+    font-size: 30px;
+    color: #B23902;
+    /* Venstrestillet */
+    margin-left: 6px;
+    /* Juster venstre margen efter behov */
+    margin-bottom: 5px;
+    /* Mindre afstand mellem overskriften og billederne */
+    z-index: 2;
+    position: relative;
+    font-family: "Cinzel", serif;
+}
+main h3.præferencer {
+    margin-top: 5px;
+    /* Mindre afstand fra toppen */
+    margin-left: 495px;
+}
+
+.feature{
+    margin-top: -237px;
+    left: 61%;
+    position: relative;
+}
+
+.checked {
+    color: orange;
+  }
+  /* redigering af stjeneratting */
+.starratings{
+    color: var(--grå);
+    margin-right: 25%;
+    margin-left: 24%;
+  }
