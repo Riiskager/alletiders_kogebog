@@ -200,7 +200,7 @@ body{
 }
 
 #infographic{
-width: 110%;
+width: 108%;
 height: auto;
 margin-left: 8%;
 margin-top: 8%;
@@ -211,8 +211,8 @@ border: 3px solid var(--opkriftgraa);
 
 h1{
     font-family: "Cinzel", serif;
-    font-size:xx-large;
-    margin-left: 30%;
+    font-size:250%;
+    margin-left: 25%;
     margin-top: 6%;
     color: var(--brunroed);
 }
