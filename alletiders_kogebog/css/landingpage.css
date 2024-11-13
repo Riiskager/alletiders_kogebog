@@ -344,18 +344,37 @@ main{
             padding-left: 1px;
             padding-right: 1px;
         }
+        body{
+            background-image: url(../img/telefon_baggrund.png);
+            background-size: 100%;
+        }
          .række3{
         display: block;
         align-items: center;
     }
-    .række3 h1{
-        width: 100%;
+        .række3 h1{
+            width: 100%;
     }
-    .række3 img{
-        width: 100%;
-        margin: 0;
+        .række3 img{
+            width: 100%;
+            margin: 0;
     }
-
+        .række2{
+            display: none;
+        }
+        .carousel{
+            display: block;
+        }
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+        .slide {
+            padding-left: 18%;
+        }
+        .slide img{
+            width: 250px;
+        }
 
     }
  
