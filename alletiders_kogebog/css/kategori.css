@@ -211,8 +211,8 @@ body {
 
 /* Styling til billederne */
 .billede-container img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     /* Gør billederne runde */
     object-fit: cover;
@@ -270,7 +270,7 @@ body {
     background-color: #e2903a;
     color: white;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
