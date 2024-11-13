@@ -392,6 +392,9 @@ h1{
 main{
     display: flex;
 }
+
+
+/*Telefon*/
 @media (max-width: 768px){
     .logo{
         width: 25%;
@@ -411,12 +414,12 @@ main{
         padding-left: 1px;
         padding-right: 1px;
     }
-
 }
 
+
+/*Tablet*/
 @media (max-width: 1024px){
         
-
     .logo{ 
          position: absolute;
         top: 10%;
@@ -442,19 +445,5 @@ main{
     .Tekst{
         width: 40%;
     }
-    .række3 img{
-        width: 400px;
-        margin: 5% 0 5% 10%;
-        
+
     }
-    }
-/* Tablets (min. bredde: 600px) */
-@media (min-width: 600px) {
-
-}
-
-
-/* Laptops og større skærme (min. bredde: 1024px) */
-@media (min-width: 1024px) {
-    
-}
