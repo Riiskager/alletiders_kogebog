@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,54 +8,121 @@
     <link rel="icon" type="icon" href="/alletiders_kogebog/img/Logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
     <title>Alle Tiders Kogebog</title>
 </head>
-<body> 
-        <header> 
-            <div class="header_img">
-                <img src="img/header_computer.png" alt="header_computer">
-            </div>
-                <a href="index.html">
-                <div class="logo">
-                    <img src="img/logo.svg" alt="logo" width="180px">
-                </div>
-                </a>
-            
-               
 
-            <div class="søge">
-                 <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i>
-               
+<body>
+    <header>
+        <div class="header_img">
+            <img src="img/header_computer.png" alt="header_computer">
+        </div>
+        <a href="index.html">
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo" width="180px">
+            </div>
+        </a>
+
+        <div class="søge">
+            <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i>
+
             <form class="søgefelt">
-                    <input type="text" placeholder="Søg..." name="search">
+                <input type="text" placeholder="Søg..." name="search">
             </form>
-        
-            </div>
 
-            <div class="burger">
-                
-                    <i class="fa-solid fa-burger"></i>
-            
-                <div class="dropdown">
-                    <ul>
+        </div>
+
+        <div class="burger">
+
+            <i class="fa-solid fa-burger"></i>
+
+            <div class="dropdown">
+                <ul>
                     <li><a href="kategori.html">Kategorier</a></li>
                     <li><a href="opskrift.html">Opskrifter</a></li>
                     <li><a href="profil.html">Profil</a></li>
-                    </ul>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <h2 class="overskrift">RETTER</h2>
+
+        <div class="top-bar">
+            <div class="filter-container">
+                <button class="filter-button">VEGETAR <i class="fa fa-chevron-down"></i></button>
+                <div class="filter-dropdown">
+                    <label><input type="checkbox" name="filter1">Vegetar</label>
+                    <label><input type="checkbox" name="filter2">Vegansk</label>
+                    <label><input type="checkbox" name="filter3">Kød</label>
+                    <label><input type="checkbox" name="filter4">Lav-kalorie</label>
                 </div>
             </div>
-        </header>
-    <main>
-       
+        </div>
+
+        <div class="rundebilleder">
+            <!-- Første række af billeder -->
+            <div class="billede-container">
+                <img src="img/avocadosalat.jpg" alt="avocadosalat">
+                <p>xxxx</p>
+            </div>
+            <div class="billede-container">
+                <img src="img/brocollisalat.jpg" alt="brocollisalat">
+                <p>xxxx</p>
+            </div>
+            <div class="billede-container">
+                <img src="img/burger_et.jpg" alt="burger_et">
+                <p>xxxx</p>
+            </div>
+            <div class="billede-container">
+                <img src="img/bøf.jpg" alt="bøf">
+                <p>xxxx</p>
+            </div>
+            <div class="billede-container">
+                <img src="img/grilletlaks.jpg" alt="grilletlaks">
+                <p>xxxx</p>
+            </div>
+        </div>
+
+        <!-- Tekst mellem de to billedrækker -->
+        <h2 class="overskrift">SALATER</h2>
+
+        <div class="rundebilleder">
+            <!-- Anden række af billeder -->
+            <div class="billede-container">
+                <img src="img/gyrus.jpg" alt="gyrus">
+                <p>xxxx</p>
+            </div>
+            <div class="billede-container">
+                <img src="img/hvidsuppe.jpg" alt="hvidsuppe">
+                <p>xxxx</p>
+            </div>
+            <div class="billede-container">
+                <img src="img/kogtegrøntsager.jpg" alt="kogtegrøntsager">
+                <p>xxxx</p>
+            </div>
+            <div class="billede-container">
+                <img src="img/kyllingebryst.jpg" alt="kyllingebryst">
+                <p>xxxx</p>
+            </div>
+            <div class="billede-container">
+                <img src="img/onepot.jpg" alt="onepot">
+                <p>xxxx</p>
+            </div>
+        </div>
+
+        <h2 class="overskrift">TILBEHØR</h2>
+
     </main>
 
     <footer>
         <p>Kontakt os <br> NR: 12345678 <br> E-mail: alle.tiders@køkken.dk</p>
-        
+
     </footer>
 
 </body>
+
 </html>

@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    
+
 }
 
-:root{ /*Bestemmer vores standart farver*/
+:root {
+    /*Bestemmer vores standart farver*/
     --grå: #d0cfcb;
     --hvid: #F6F6F6;
     --lysorange: #e2903a;
@@ -12,36 +13,39 @@
     --brunroed: #B23902;
 }
 
-.logo{ /*Sætter logoet i midten af midten, og sørger for den ligger over alt*/
+.logo {
+    /*Sætter logoet i midten af midten, og sørger for den ligger over alt*/
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
 }
 
 /*Sørger for vores billede i headeren kommer bag ved alt, og fylder helt ud på skærmen*/
-header img { 
+header img {
     max-width: 100%;
     z-index: -1;
-  }
-  /*Vores søge ikon, sørger for cursor ændrer sig til pointer når du er over den*/
-.søge{
+}
+
+/*Vores søge ikon, sørger for cursor ændrer sig til pointer når du er over den*/
+.søge {
     position: absolute;
     top: 40px;
     right: 140px;
-    font-size: 30px; 
-    color: var(--hvid); 
-    z-index: 1; 
+    font-size: 30px;
+    color: var(--hvid);
+    z-index: 1;
     cursor: pointer;
 }
 
 
-.søgefelt{
+.søgefelt {
     position: absolute;
     top: 5px;
     left: -250px;
@@ -50,17 +54,18 @@ header img {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    
+
 }
-.søgefelt::before{
+
+.søgefelt::before {
     content: "";
     position: absolute;
-    top:-20px;
+    top: -20px;
     left: 95px;
     animation: slideSide 1s ease;
 }
 
-.søgefelt input{
+.søgefelt input {
     list-style: none;
     padding: 5px 20px;
     margin-right: 20px;
@@ -72,37 +77,42 @@ header img {
     font-weight: 600;
     font-family: "Cinzel", serif;
 }
-@keyframes slideSide{
-    from{
-        opacity:0;
+
+@keyframes slideSide {
+    from {
+        opacity: 0;
         transform: translateX(10px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0);
     }
 }
-.søge i:hover input{
+
+.søge i:hover input {
     opacity: 1;
     transform: all 1s ease;
 }
-.søge:hover .søgefelt{
+
+.søge:hover .søgefelt {
     display: flex;
 }
 
 
-.burger{
+.burger {
     position: absolute;
     display: inline-block;
     top: 40px;
     right: 65px;
-    font-size: 30px; 
-    color: var(--hvid); 
-    z-index: 1; 
+    font-size: 30px;
+    color: var(--hvid);
+    z-index: 1;
     text-decoration: none;
     cursor: pointer;
 }
-.dropdown{
+
+.dropdown {
     position: absolute;
     top: 50px;
     left: -90px;
@@ -111,19 +121,20 @@ header img {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    
+
 }
-.dropdown::before{
+
+.dropdown::before {
     content: "";
     position: absolute;
-    top:-20px;
+    top: -20px;
     left: 95px;
     border: 10px solid transparent;
     border-bottom-color: rgba(0, 0, 0, 0.2);
     animation: slideDown 1s ease;
 }
 
-.dropdown ul{
+.dropdown ul {
     list-style: none;
     padding: 0;
     text-align: center;
@@ -131,50 +142,187 @@ header img {
     animation: slideDown 1s ease;
     border-radius: 5px;
 }
-@keyframes slideDown{
-    from{
-        opacity:0;
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
         transform: translateY(-10px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-.burger i:hover ul{
+
+.burger i:hover ul {
     opacity: 1;
     transform: all 1s ease;
 }
 
-.dropdown ul li{
+.dropdown ul li {
     padding: 5px 40px;
 }
-.dropdown ul li a{
+
+.dropdown ul li a {
     font-family: "Cinzel", serif;
     color: #F6F6F6;
     text-decoration: none;
     font-size: 17px;
     font-weight: 500;
 }
-.burger:hover .dropdown{
+
+.burger:hover .dropdown {
     display: flex;
 }
-.dropdown li:hover{
+
+.dropdown li:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-
-
-body{
+body {
     background-color: #f6f6f6;
-  }
+}
 
-  footer{
-    background-color:#e2903a;
+.rundebilleder {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 kolonner */
+    gap: 20px;
+    /* Afstand mellem både billederne og rækkerne */
+    grid-row-gap: 40px;
+    /* Afstand mellem rækkerne */
+    justify-items: center;
+    /* Centrerer billederne horisontalt */
+    grid-auto-rows: auto;
+    /* Højden justeres automatisk afhængigt af billedet og teksten */
+    margin-top: 60px;
+    /* Afstand mellem headeren og billederne */
+    width: 100%;
+    margin-bottom: 40px;
+    /* Afstand mellem billeder og footer */
+}
+
+/* Container for hvert billede og tekst */
+.billede-container {
+    text-align: center;
+    /* Centrerer både billede og tekst */
+}
+
+/* Styling til billederne */
+.billede-container img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    /* Gør billederne runde */
+    object-fit: cover;
+    /* Sikrer, at billedet fylder cirklen uden at blive forvrænget */
+    transition: transform 0.3s ease;
+    /* Gør effekten glidende og tilføjer varighed */
+}
+
+/* Zoom-effekt på billederne */
+.billede-container img:hover {
+    transform: scale(1.1);
+    /* Forstørrer billedet med 10% */
+}
+
+/* Styling af teksten under billederne */
+.billede-container p {
+    margin-top: 15px;
+    /* Afstand mellem billede og tekst */
+    font-size: 20px;
+    /* Tekststørrelse */
+    color: #B23902;
+    /* Tekstfarve */
+}
+
+.overskrift {
+    text-align: left;
+    font-size: 30px;
+    /* Juster størrelsen efter behov */
+    color: #B23902;
+    /* Vælg en farve der passer */
+    margin-bottom: px;
+    /* Giver luft mellem teksten og billedgalleriet */
+    margin-left: 150px;
+    /* Justerer venstre margen, hvis du ønsker lidt indrykning */
+}
+
+.overskrift {
+    text-align: left;
+    font-size: 30px;
+    color: #B23902;
+    margin-top: 100px;
+    /* Øg afstanden her */
+    margin-bottom: 10px;
+    margin-left: 72px;
+}
+
+/* Container for filter */
+.filter-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styling af filtreringsknappen */
+.filter-button {
+    background-color: #e2903a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #b23902;
+}
+
+/* Dropdown-menu skjult som standard */
+.filter-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.filter-container {
+    margin-bottom: 25px;
+    /* Skaber plads mellem knappen og billederne */
+    margin-top: -30px;
+    /* Juster dette for at rykke knappen opad */
+}
+
+.filter-container {
+    position: relative;
+    display: inline-block;
+    float: right;
+    /* Flytter knappen helt til højre */
+    margin-right: 15px;
+    /* Tilføj eventuel ekstra margen fra højre */
+}
+
+.filter-container {
+    margin-left: auto;
+    /* Skubber knappen helt til højre */
+    margin-right: 54px;
+    /* Juster afstand fra højre kant */
+}
+
+footer {
+    background-color: #e2903a;
     padding: 20px;
-    color:#F6F6F6;
-  }
+    color: #F6F6F6;
+}
 
-  .footer p{
+.footer p {
     font-family: Arial, Helvetica, sans-serif;
-  } 
+
+}
