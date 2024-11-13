@@ -184,7 +184,7 @@ body {
     background-color: #f6f6f6;
 }
 
-/* Justér galleriet af billeder */
+/* Galleriet af billeder */
 .rundebilleder {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -204,9 +204,10 @@ body {
     /* Mindre afstand mellem billederne og næste sektion */
 }
 
-/*nedenunder er farven på stjernerne */
+/* Farve på stjernerne */
 .checked {
     color: var(--lysorange);
+    /* Farven på de "checkede" stjerner */
 }
 
 /* Container for hvert billede og tekst */
@@ -224,13 +225,13 @@ body {
     object-fit: cover;
     /* Sikrer at billedet fylder cirklen uden at blive forvrænget */
     transition: transform 0.3s ease;
-    /* Gør effekten glidende og tilføjer varighed */
+    /* Glidende effekt ved zoom */
 }
 
 /* Zoom-effekt på billederne */
 .billede-container img:hover {
     transform: scale(1.1);
-    /* Forstørrer billedet med 10% */
+    /* Forstørrer billedet med 10% ved hover */
 }
 
 /* Styling af teksten under billederne */
@@ -287,7 +288,7 @@ main h2.overskrift_tilbehor {
     margin-bottom: 20px;
     /* Mindre afstand mellem knappen og billeder */
     margin-right: 5%;
-    /* Denne værdi kan justeres for at justere knappen mod midten */
+    /* Juster knappen mod midten */
 }
 
 /* Styling af filtreringsknappen */
@@ -300,11 +301,13 @@ main h2.overskrift_tilbehor {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
+    /* Glidende baggrundsfarve ved hover */
 }
 
 /* Hover-effekt for filtreringsknappen */
 .filter-button:hover {
     background-color: #b23902;
+    /* Ændrer baggrundsfarven ved hover */
 }
 
 footer {
@@ -314,7 +317,7 @@ footer {
 }
 
 .footer p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Cinzel", serif;
 
 }
 
