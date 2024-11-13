@@ -180,6 +180,7 @@ header img {
 }
 
 
+
 /*body redigering */
 body{
     background-color: var(--hvid);
@@ -393,55 +394,56 @@ main{
 }
 
 
-/* Alt under 600px er telefon - telefon redigering */
-@media (max-width: 600px) {
-
-main{
-    display: flex;
-    flex-direction: column;
-}
-
-#dumplings{
-    width: 90%;
-    order: 1;
-    margin-left: 12%;
-}
-
-.kolonne2{
-    order: 2;
-}
-
-.smaa_features{
-    order: 3;
-}
-
-#ingredienser{
-    order: 4;
-}
-
-#fremgangsmåde{
-    order: 5;
-}
-
-.ingredienser{
-    order: 6;
-}
-
-.fremgangsmåde{
-    order: 7;
-}
-
-#infographic{
-    order: 8;
-    width: 90%;
-    margin-left: 12%;
+/*Telefon*/
+@media (max-width: 768px){
+    .logo{
+        width: 25%;
+        left: 15%;
+        top: 7%;
+    }
+    .burger{
+        left: 85%
+    }
+    .søge{
+        left: 75%
+    }
+    .søgefelt{
+        left: -200px;
+    }
+    .søgefelt input{
+        padding-left: 1px;
+        padding-right: 1px;
+    }
 }
 
 
-}
+/*Tablet*/
+@media (max-width: 1024px){
+        
+    .logo{ 
+         position: absolute;
+        top: 10%;
+        left: 85%;
+        width: 25%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    } 
+    .søge{
+        left: 20%;
+    }
+    .søgefelt{
+        left: 10%;
+        top: 5%;
+    }
+    .burger{
+        left:10%;
+        width: 50px;
+    }
+    .header_img img{
+        display: flex;
+    }
+    .Tekst{
+        width: 40%;
+    }
 
-
-/* Alt under 1024px er tablet - tablet redigering */
-@media (max-width: 1024px) {
-    
-}
+    }

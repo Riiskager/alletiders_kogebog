@@ -197,10 +197,10 @@ body {
     /* Centrerer billederne horisontalt */
     grid-auto-rows: auto;
     /* Højden justeres automatisk afhængigt af billedet og teksten */
-    margin-top: 5px;
+    margin-top: 0%;
     /* Mindre afstand mellem overskriften og billederne */
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     /* Mindre afstand mellem billederne og næste sektion */
 }
 
@@ -239,48 +239,67 @@ body {
 }
 
 /* Styling af overskrifterne */
-main h2.overskrift_retter,
-main h2.overskrift_salater,
-main h2.overskrift_tilbehor {
-    font-size: 30px;
+main h2.overskrift_retter {
+    font-size: 35px;
     color: #B23902;
     text-align: left;
     /* Venstrestillet */
-    margin-left: 6%;
+    margin-left: 4.5%;
     /* Juster venstre margen efter behov */
-    margin-bottom: 5px;
+    margin-bottom: -1%;
     /* Mindre afstand mellem overskriften og billederne */
 }
 
-main h2.overskrift_retter {
-    margin-top: 10px;
-    /* Mindre afstand fra toppen */
+main h2.overskrift_salater {
+    font-size: 25px;
+    color: #B23902;
+    text-align: left;
+    /* Venstrestillet */
+    margin-left: 5.3%;
+    /* Juster venstre margen efter behov */
+    margin-bottom: 3px;
+    /* Mindre afstand mellem overskriften og billederne */
 }
 
-.overskrift_salater {
-    font-size: 20px;
-    /* Juster størrelse */
-    margin-top: 10px;
-    /* Mindre afstand mellem overskrift og billeder */
+main h2.overskrift_tilbehor {
+    font-size: 25px;
+    color: #B23902;
+    text-align: left;
+    /* Venstrestillet */
+    margin-left: 5.3%;
+    /* Juster venstre margen efter behov */
+    margin-bottom: 3px;
+    /* Mindre afstand mellem overskriften og billederne */
 }
 
-.overskrift_tilbehor {
-    font-size: 20px;
-    margin-top: 10px;
-    /* Mindre afstand til billederne */
-    margin-bottom: 40px;
-    /* Giver plads til bunden */
-}
-
-/* Justér filtreringsknappen */
+/* Container for filter */
 .filter-container {
-    position: relative;
-    display: inline-block;
-    float: right;
-    margin-top: -20px;
-    /* Mindre afstand mellem knappen og billeder */
+    display: flex;
+    justify-content: flex-end;
+    /* Holder knappen til højre */
+    margin-top: -10px;
+    /* Juster afstanden fra toppen */
     margin-bottom: 20px;
-    /* Placer knappen tættere på billederne */
+    /* Mindre afstand mellem knappen og billeder */
+    margin-right: 5%;
+    /* Denne værdi kan justeres for at justere knappen mod midten */
+}
+
+/* Styling af filtreringsknappen */
+.filter-button {
+    background-color: #e2903a;
+    color: white;
+    padding: 10px 30px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover-effekt for filtreringsknappen */
+.filter-button:hover {
+    background-color: #b23902;
 }
 
 footer {
@@ -293,3 +312,57 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
 
 }
+@media (max-width: 768px){
+    .logo{
+        width: 25%;
+        left: 15%;
+        top: 7%;
+    }
+    .burger{
+        left: 85%
+    }
+    .søge{
+        left: 75%
+    }
+    .søgefelt{
+        left: -200px;
+    }
+    .søgefelt input{
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+@media (max-width: 1024px){
+        
+
+    .logo{ 
+         position: absolute;
+        top: 10%;
+        left: 85%;
+        width: 25%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    } 
+    .søge{
+        left: 20%;
+    }
+    .søgefelt{
+        left: 10%;
+        top: 5%;
+    }
+    .burger{
+        left:10%;
+        width: 50px;
+    }
+    .header_img img{
+        display: flex;
+    }
+    .Tekst{
+        width: 40%;
+    }
+    .række3 img{
+        width: 400px;
+        margin: 5% 0 5% 10%;
+        
+    }
+    }
