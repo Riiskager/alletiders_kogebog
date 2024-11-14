@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 
 /* Google fonts*/
@@ -197,10 +196,10 @@ footer{
 
 /* id redegeringer */  
 #dumplings{
-        width: 60%;
-        height: auto;
-        margin-left: 30%;
-        border-radius: 50%;
+    width: 60%;
+    height: auto;
+    margin-left: 30%;
+    border-radius: 50%;
 }
 
 #infographic, #dumplings{
@@ -216,12 +215,12 @@ footer{
 }
 
 #infographic{
-width: 108%;
-height: auto;
-margin-left: 8%;
-margin-top: 8%;
-margin-bottom: 5%;
-border: 3px solid var(--opkriftgraa);
+    width: 108%;
+    height: auto;
+    margin-left: 8%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    border: 3px solid var(--opkriftgraa);
 }
 
 /* overskift redigering */
@@ -246,8 +245,6 @@ h1{
     margin-left: 25%;
 }
 
-
-
 /* redigering af stjeneratting */
 .starrating{
     color: var(--grå);
@@ -258,7 +255,7 @@ h1{
     color: var(--lysorange);
 }
 
-/* redigering af antal personer */
+/* redigering af antal personer til ret */
 .minus{
     color: var(--hvid);
     background-color: var(--lysorange);
@@ -306,7 +303,7 @@ h1{
     color: var(--brunroed);
   }
   
-  .skaerm_taendt input {
+.skaerm_taendt input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -314,7 +311,7 @@ h1{
     width: 0;
   }
   
-  .checkmark {
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -330,24 +327,24 @@ h1{
   }
   
   /* checkbox is checked redigering */
-  .skaerm_taendt input:checked ~ .checkmark {
+.skaerm_taendt input:checked ~ .checkmark {
     background-color: var(--lysorange);
   }
   
   /* Create the checkmark indicator (hidden when not checked) */
-  .checkmark:after {
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
   
   /* Show the checkmark when checked */
-  .skaerm_taendt input:checked ~ .checkmark:after {
+.skaerm_taendt input:checked ~ .checkmark:after {
     display: block;
   }
   
   /* checkmark indicator */
-  .skaerm_taendt .checkmark:after {
+.skaerm_taendt .checkmark:after {
     left: 3px;
     width: 5px;
     height: 8px;
@@ -390,7 +387,6 @@ h3{
     margin-right: 2%;
 }
 
-
 .ingredienser{
     height: 30%;
     background-color: var(--opkriftgraa);
@@ -414,13 +410,14 @@ h3{
     width: 70%;
 }
 
+
 /*main redigering */
 main{
     display: flex;
 }
 
 
-/*Telefon*/
+/********************************************Telefon*********************************************/
 /* header stuff */
 @media (max-width: 768px){
     .logo{
@@ -442,25 +439,19 @@ main{
         padding-right: 1px;
     }
 
-/* site indghold redigering */
+/* telefonsite indhold redigering */
 main{
     display: block;
 }
 
-#dumplings{
-    width: 60%;
-    margin-left: 20%;
-}
-
-/* swirls og dumplings billede */
+/* billede  og swirls redigering */
 .billeder{
     display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 5%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
 }
 
-/* swirls og dumpling billeder */
 #swirl1{
     display: block;
     width: 20%;
@@ -473,6 +464,7 @@ main{
     height: auto;
     margin: 0 auto;
     margin-bottom: 4%;
+    
 }
 
 #swirl2 {
@@ -488,13 +480,14 @@ main{
     display: none;
 }
 
-
+/* overskift redigering */
 h1{
     margin-left: 2%;
     font-size: xx-large;
     text-align: center;
 }
 
+/* redigering af små features */
 .emil{
     display: flex;
 }
@@ -514,35 +507,36 @@ h1{
     text-align: center;
 }
 
-.overskifter{
-    display: none;
-}
-
 .antal_personer{
     text-align: center;
 }
 
+/* Fjern underoverskifter fra pc på mobil */
+.overskifter{
+    display: none;
+}
 
+/* redigering af mobil underoverksifter */
 #ingredienser_mobil{
-font-size: 140%;
-color: var(--brunroed);
-margin-left: 5%;
-font-family: "Cinzel", serif;
-margin-top: 8%;
-display: block;
+    font-size: 140%;
+    color: var(--brunroed);
+    margin-left: 5%;
+    font-family: "Cinzel", serif;
+    margin-top: 8%;
+    display: block;
 }
 
 #fremgangsmåde_mobil{
     font-size: 140%;
-color: var(--brunroed);
-margin-left: 5%;
-font-family: "Cinzel", serif;
-margin-top: 8%;
-margin-bottom: 2.5%;
-display: block;
+    color: var(--brunroed);
+    margin-left: 5%;
+    font-family: "Cinzel", serif;
+    margin-top: 8%;
+    margin-bottom: 2.5%;
+    display: block;
 }
 
-
+/* redigering af tekst */
 .tekst{
     margin-left: 3%;
     display: block;
@@ -564,10 +558,10 @@ display: block;
 
 }
 
-
-/*Tablet*/
+/**************************************************Tablet****************************************/
 @media (max-width: 1024px) and (min-width: 768px){
-        
+
+/* header redigering til tablet */
     .logo{ 
          position: absolute;
         top: 15%;
@@ -598,18 +592,25 @@ display: block;
          }
 
 
-         
 /* site indghold redigering */
 
+/* fjerner infographic fra pc på tablet */
 #infographic{
     display: none;
 }
 
+/* tablet infographic */
 #infographic_tablet{
     display: block;
     margin-left: 1.5%;
     width: 108%;
     margin-bottom: 1.5%;
+}
+
+/* billeder på tablet redigering */
+
+.billeder{
+    display: none;
 }
 
 #dumplings{
@@ -628,31 +629,16 @@ display: block;
     margin-top: 20%;
 }
 
+/* redigering af små features på tablet */
 .emil{
     margin-left: 30%;
     margin-top: 30%;
 }
 
-
 .smaa_features{
     margin-top: -10%;
 }
 
-.overskifter{
-    margin-left: 22%;
-}
-
-#overskift_tablet{
-    display: flex;
-    font-family: "Cinzel", serif;
-    font-size: 200%;
-    color: var(--brunroed);
-    width: 300%;
-    margin-left: -70%;
-    margin-bottom: 20%;
-}
-
-/* redigering af små features til tablet */
 .starrating{
     font-size: 200%;
     width: 110%;
@@ -673,6 +659,21 @@ display: block;
     margin-left: -25%;
 }
 
+/* redigering af underoverskifter */
+.overskifter{
+    margin-left: 22%;
+}
+
+#overskift_tablet{
+    display: flex;
+    font-family: "Cinzel", serif;
+    font-size: 200%;
+    color: var(--brunroed);
+    width: 300%;
+    margin-left: -70%;
+    margin-bottom: 20%;
+}
+
 /*redigering af små overksifter til tablet */
 h2{
     font-size: 200%;
@@ -682,10 +683,16 @@ h1{
     display: none;
 }
 
-.billeder{
-    display: none;
+#ingredienser{
+    margin-left: -10%;
 }
 
+#Fremgangsmåde{
+    margin-left: 10%;
+}
+
+
+/* redigering af tekster */
 .kolonne2{
     width: 90%;
     margin-top: -8%;
@@ -699,14 +706,5 @@ h1{
     margin-left: 1.5%;
     width: 109%;
 }
-
-#ingredienser{
-    margin-left: -10%;
-}
-
-#Fremgangsmåde{
-    margin-left: 10%;
-}
-
 
  }

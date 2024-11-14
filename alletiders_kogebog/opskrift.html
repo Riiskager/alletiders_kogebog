@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/opskrift.css">
-    <link rel="icon" type="icon" href="/alletiders_kogebog/img/Logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,53 +49,48 @@
         </header>
 
 <!-- Indhold på site -->
-    <main>
-       <section class="billeder">
+<main>
+    <div class="billeder">
         <img id="swirl1" src="img/swirl_1.png" alt="swirls">
         <img id="dumplings" src="img/dumplingsrund.jpg" alt="Ret">
         <img id="swirl2" src="img/swirl2.png" alt="swirls">
         <img id="infographic" src="img/Infograpich_dumplings.jpg" alt="infographic">
-        
-       </section>
+    </div>
 
-       <section class="kolonne2">
+<section class="kolonne2">
         <h1>
             Dumplings med svinekød
         </h1>
     
 
-<article class="smaa_features">
+    <article class="smaa_features">
+            <img id="dumplings_tablet" src="img/dumplingsrund.jpg" alt="Ret">
+        <div class="emil">
 
-    <img id="dumplings_tablet" src="img/dumplingsrund.jpg" alt="Ret">
+            <h5 id="overskift_tablet">
+                Dumplings med svinekød
+            </h5>
 
-<div class="emil">
+        <div class="starrating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </div>
 
-    <h5 id="overskift_tablet">
-        Dumplings med svinekød
-    </h5>
+        <form class="antal_personer">
+            <button class="minus" type="button">-</button>
+            <input type="text" class="antal" value="1">
+            <button class="plus" type="button">+</button>
+        </form>
 
-    <div class="starrating">
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-    </div>
-
-    <form class="antal_personer">
-        <button class="minus" type="button">-</button>
-        <input type="text" class="antal" value="1">
-        <button class="plus" type="button">+</button>
-    </form>
-
-    <label class="skaerm_taendt">Hold skærm tændt
+        <label class="skaerm_taendt">Hold skærm tændt
             <input type="checkbox" checked="checked">
             <span class="checkmark"></span>
-    </label>
-</div>
-
+        </label>
+    </div>
 </article>
-
 
     <div class="overskifter">
         <h2 id="ingredienser">
@@ -142,17 +136,14 @@
             Voliá! Nyd nu dine lækre dumplings, dyp dem evt. i lidt soya eller anden lækker sovs efter eget valg.  
         </p>
     </article>
+        <img id="infographic_tablet" src="img/Infograpich_dumplings.jpg" alt="infographic">
+</section>
+</main>
 
-    <img id="infographic_tablet" src="img/Infograpich_dumplings.jpg" alt="infographic">
+<footer>
+    <p>Kontakt os <br> NR: 12345678 <br> E-mail: alle.tiders@køkken.dk</p>
+</footer>
+<script src="/alletiders_kogebog/js/header.js"></script>
 
-       </section>
-
-    </main>
-
-    <footer>
-        <p>Kontakt os <br> NR: 12345678 <br> E-mail: alle.tiders@køkken.dk</p>
-    </footer>
-
-    <script src="/alletiders_kogebog/js/header.js"></script>
 </body>
 </html>
