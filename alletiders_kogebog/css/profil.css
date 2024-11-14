@@ -533,3 +533,58 @@ main h3.præferencer {
 /* ordne features */
 /* ordne antal billeder */
 /* ordne header */
+@media (max-width: 1024px)and(min-width:768px){
+        
+
+    .logo{ 
+         position: absolute;
+        top: 10%;
+        left: 85%;
+        width: 25%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    } 
+    .søge{
+        left: 20%;
+    }
+    .søgefelt{
+        left: 10%;
+        top: 5%;
+    }
+    .burger{
+        left:10%;
+        width: 50px;
+    }
+    .header_img img{
+        display: flex;
+    }
+    .Tekst{
+        width: 40%;
+    }
+    .række3 img{
+        width: 400px;
+        margin: 5% 0 5% 10%;
+        
+    }
+    }
+
+    @media (max-width: 768px){
+        .logo{
+            width: 25%;
+            left: 15%;
+            top: 7%;
+        }
+        .burger{
+            left: 85%
+        }
+        .søge{
+            left: 75%
+        }
+        .søgefelt{
+            left: -200px;
+        }
+        .søgefelt input{
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+    }
