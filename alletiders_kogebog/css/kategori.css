@@ -393,10 +393,10 @@ footer {
     }
 
     .rundebilleder {
-        margin-left: 6%;
+        margin: 5.5%;
     }
 
-    #nrfem {
+    .rundebilleder #nrfem {
         display: none;
     }
 }
