@@ -208,6 +208,14 @@ footer{
     display: block;
 }
 
+#dumplings_tablet{
+    display: none;
+}
+
+#overskift_tablet{
+    display: none;
+}
+
 #infographic{
 width: 108%;
 height: auto;
@@ -605,12 +613,77 @@ display: block;
     margin-left: 40%;
 }
 
+#dumplings_tablet{
+    display: flex;
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin-left: -25%;
+    margin-bottom: 5%;
+    margin-top: 20%;
+}
+
+.emil{
+    margin-left: 30%;
+    margin-top: 30%;
+}
+
+
+.smaa_features{
+    margin-top: -10%;
+}
+
+.overskifter{
+    margin-left: 22%;
+}
+
+#overskift_tablet{
+    display: flex;
+    font-family: "Cinzel", serif;
+    font-size: 200%;
+    color: var(--brunroed);
+    width: 300%;
+    margin-left: -70%;
+    margin-bottom: 20%;
+}
+
+/* redigering af små features til tablet */
+.starrating{
+    font-size: 200%;
+    width: 110%;
+    margin-left: -25%;
+}
+
+.antal_personer{
+    margin: 10% 0;
+    width: 180%;
+    height: auto;
+    margin-left: -22%;
+}
+
+.skaerm_taendt{
+    font-size: x-large;
+    padding-left: 12%;
+    width: 180%;
+    margin-left: -25%;
+}
+
+/*redigering af små overksifter til tablet */
+h2{
+    font-size: 200%;
+}
+
+h1{
+    display: none;
+}
+
 .billeder{
     display: none;
 }
 
 .kolonne2{
     width: 90%;
+    margin-top: -8%;
 }
 
 .fremgangsmåde{
@@ -630,4 +703,5 @@ display: block;
     margin-left: 10%;
 }
 
-         }
+
+ }
