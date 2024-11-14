@@ -180,7 +180,6 @@ header img {
 }
 
 
-
 /*body redigering */
 body{
     background-color: var(--hvid);
@@ -234,7 +233,7 @@ h1{
     color: var(--brunroed);
 }
 
-/* Gem swirls på pc */
+/* Skjul swirls på pc */
 #swirl1,
 #swirl2{
     display: none;
@@ -246,6 +245,8 @@ h1{
     margin-top: 6%;
     margin-left: 25%;
 }
+
+
 
 /* redigering af stjeneratting */
 .starrating{
@@ -492,6 +493,10 @@ h1{
     margin-left: 2%;
     font-size: xx-large;
     text-align: center;
+}
+
+.emil{
+    display: flex;
 }
 
 .smaa_features{
