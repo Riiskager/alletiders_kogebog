@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/profil.css">
+    <link rel="icon" type="image/png" href="img/Logo.png">
+
     
     <title>Alle Tiders Kogebog</title>
 </head>
@@ -47,7 +49,15 @@
         </div>
     </header>
     <main>
+        <div class="headermobil">
+            <img src="img/header_tlf.png" alt="headermobil">
+        </div>
 
+        <a href="index.html">
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo" width="180px">
+            </div>
+        </a>
 <div class="tomprofil">
     <img src="img/tomprofil.png" alt="tomprofil">
 </div>
@@ -108,8 +118,8 @@
                     <span class="fa fa-star"></span>
                     </div>
             </div>
-            <div class="billede-container">
-                <img src="img/bøf.jpg" alt="bøf">
+            <div id="boef" class="billede-container">
+                <img id="boef" src="img/bøf.jpg" alt="boef">
                 <p>Bøf med grønt</p>
                 <div class="starratings">
                     <span class="fa fa-star checked"></span>
@@ -119,7 +129,7 @@
                     <span class="fa fa-star"></span>
                     </div>
             </div>
-            <div class="billede-container">
+            <div id="grilletlaks" class="billede-container">
                 <img src="img/grilletlaks.jpg" alt="grilletlaks">
                 <p>Grilletlaks</p>
                 <div class="starratings">
@@ -173,7 +183,7 @@
                     <span class="fa fa-star"></span>
                     </div>
             </div>
-            <div class="billede-container">
+            <div id="kyllingebryst" class="billede-container">
                 <img src="img/kyllingebryst.jpg" alt="kyllingebryst">
                 <p>Kyllingebryst</p>
                 <div class="starratings">
@@ -184,7 +194,7 @@
                     <span class="fa fa-star"></span>
                     </div>
             </div>
-            <div class="billede-container">
+            <div id="onepot" class="billede-container">
                 <img src="img/onepot.jpg" alt="onepot">
                 <p>Onepot</p>
                 <div class="starratings">
@@ -203,6 +213,7 @@
 
     </footer>
 
+    <script src="/alletiders_kogebog/js/header.js"></script>
 </body>
 
 </html>
