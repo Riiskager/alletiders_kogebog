@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 :root {
@@ -31,6 +30,17 @@ header {
 header img {
     max-width: 100%;
     z-index: -1;
+}
+
+.headermobil {
+    display: none;
+}
+
+.side1 {
+    display: none;
+}
+.side2 {
+    display: none;
 }
 
 /*Vores søge ikon, sørger for cursor ændrer sig til pointer når du er over den*/
@@ -367,17 +377,15 @@ main h3.præferencer {
         display: flex; /* Vis mobil header */
         text-align: center;
     }
-    .headermobil img {
-        margin
-    }
 
     .logo{
-        width: 25%;
-        left: 15%;
-        top: 7%;
+        height: auto;
+        width: -150%;
+        left: 25%;
+        top: 10%;
     }
     .burger{
-        left: 85%
+        left: 85%; 
     }
     .søge{
         left: 75%
@@ -397,16 +405,38 @@ main{
 .feature {
     display: none;
 }
+.side1 {
+    display: flex;
+    align-items: left;
+}
+.side1 img{
+    margin-top: 8%;
+    height: 500px;
+    width: 130px;
+    margin-right: 132%;
+}
+
+.side2{
+    display: flex;
+    align-items: right;
+}
+.side2 img{
+    margin-top: -130%;
+    height: 500px;
+    margin-left: 132%;
+    width: 110px;
+}
+
 .tomprofil {
     position: absolute;
-    left: 28%;
-    top: 180px;
+    left: 40%;
+    top: 220px;
     justify-content: center;
     text-align: center;
     display: flex;
 }
 .tomprofil img {
-    width: 180px;
+    width: 300px;
     height: auto;
 }
 
@@ -415,9 +445,9 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
     /* 5 kolonner */
-    gap: 5px;
+    gap: 20px;
     /* Afstand mellem billederne og rækkerne */
-    grid-row-gap: 20px;
+    grid-row-gap: 15px;
     /* Afstand mellem rækkerne */
     justify-items: center;
     /* Centrerer billederne horisontalt */
@@ -426,9 +456,10 @@ main{
     margin-top: -20px;
     /* Mindre afstand mellem overskriften og billederne */
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     /* Mindre afstand mellem billederne og næste sektion */
     cursor: pointer;
+    margin-left: 5%;
 }
 /* Container for hvert billede og tekst */
 .billede-container {
@@ -438,8 +469,8 @@ main{
 }
 /* Styling af billederne */
 .billede-container img {
-    width: 75px;
-    height: 75px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     /* Gør billederne runde */
     object-fit: cover;
@@ -452,7 +483,7 @@ main{
 .billede-container p {
     margin-top: 5px;
     /* Afstand mellem billede og tekst */
-    font-size: 15px;
+    font-size: 23px;
     /* Tekststørrelse */
     color: #B23902;
     /* Tekstfarve */
@@ -502,9 +533,9 @@ main h2.overskrift_retter {
   }
   /* tekst til profilbillede */
   main h1.info {
-    margin-top: 115px;
+    margin-top: px;
     /* Mindre afstand fra toppen */
-    margin-left: 15px;
+    margin-left: 240px;
     font-size: 25px;
 }
 .checked {
@@ -513,8 +544,8 @@ main h2.overskrift_retter {
   /* redigering af stjeneratting */
 .starrating{
     color: var(--grå);
-    margin-right: 25%;
-    margin-left: 38%;
+    margin-right: 5%;
+    margin-left: 63%;
   }
   main h3.præferencer{
     font-size: 25px;
@@ -531,7 +562,7 @@ main h2.overskrift_retter {
 main h3.præferencer {
     margin-top: 5px;
     /* Mindre afstand fra toppen */
-    margin-left: 115px;
+    margin-left: 208px;
 }
 #grilletlaks, 
 #boef{
@@ -546,17 +577,17 @@ footer {
     padding: 20px;
     color: #F6F6F6;
     font-family: "Cinzel", serif;
-    position: absolute;
-   margin-top: auto;
-    width: 100%;
+    position: relative;
+    margin-top: auto;
+    width: 150%;
+    margin-bottom: 0;
+    margin-top: 20%;
 }
 
 }
-/* ordne features */
-/* ordne header */
-@media (max-width: 1024px)and(min-width:768px){
+
+@media (max-width: 1024px) and (min-width:768px){
         
-
     .logo{ 
          position: absolute;
         top: 10%;
@@ -578,6 +609,7 @@ footer {
     }
     .header_img img{
         display: flex;
+        max-width: 100%;
     }
     .Tekst{
         width: 40%;
@@ -587,25 +619,138 @@ footer {
         margin: 5% 0 5% 10%;
         
     }
+    .feature {
+        display: none;
+    }
+    /* Justér galleriet af billeder */
+.rundebilleder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    /* 5 kolonner */
+    gap: 20px;
+    /* Afstand mellem billederne og rækkerne */
+    grid-row-gap: -20px;
+    /* Afstand mellem rækkerne */
+    justify-items: center;
+    /* Centrerer billederne horisontalt */
+    grid-auto-rows: auto;
+    /* Højden justeres automatisk afhængigt af billedet og teksten */
+    margin-top: -20px;
+    /* Mindre afstand mellem overskriften og billederne */
+    width: 100%;
+    margin-bottom: 80px;
+    /* Mindre afstand mellem billederne og næste sektion */
+    cursor: pointer;
+    margin-left: 5%;
     }
 
-    @media (max-width: 768px){
-        .logo{
-            width: 25%;
-            left: 15%;
-            top: 7%;
-        }
-        .burger{
-            left: 85%
-        }
-        .søge{
-            left: 75%
-        }
-        .søgefelt{
-            left: -200px;
-        }
-        .søgefelt input{
-            padding-left: 1px;
-            padding-right: 1px;
-        }
-    }
+/* Styling af billederne */
+.billede-container img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    /* Gør billederne runde */
+    object-fit: cover;
+    /* Sikrer at billedet fylder cirklen uden at blive forvrænget */
+    transition: transform 0.3s ease;
+    /* Gør effekten glidende og tilføjer varighed */
+    cursor: pointer;
+    margin-left: -48%;
+}
+/* Styling af teksten under billederne */
+.billede-container p {
+    margin-top: 5px;
+    /* Afstand mellem billede og tekst */
+    font-size: 23px;
+    /* Tekststørrelse */
+    color: #B23902;
+    /* Tekstfarve */
+    cursor: pointer;
+    font-family: "Cinzel", serif;
+    margin-left: -45%;
+}
+main h2.overskrift_retter,
+main h2.overskrift_salater,
+main h2.overskrift_tilbehor {
+    font-size: 25px;
+    color: #B23902;
+    text-align: left;
+    /* Venstrestillet */
+    margin-left: 6%;
+    /* Juster venstre margen efter behov */
+    margin-top: 80px;
+    /* Mindre afstand mellem overskriften og billederne */
+    font-family: "Cinzel", serif;
+}
+main h2.overskrift_retter {
+    margin-top: 150px;
+    /* Mindre afstand fra toppen */
+}
+
+.overskrift_salater {
+    font-size: 10px;
+    /* Juster størrelse */
+    margin-top: 10px;
+    /* Mindre afstand mellem overskrift og billeder */
+}
+
+.overskrift_tilbehor {
+    font-size: 5px;
+    margin-top: 10px;
+    /* Mindre afstand til billederne */
+    margin-bottom: 40px;
+    /* Giver plads til bunden */
+}
+
+.checked {
+    color: orange;
+  }
+  /* redigering af stjeneratting */
+.starratings{
+    color: var(--grå);
+    margin-right: 35%;
+    margin-left: -10%;
+  }
+  /* tekst til profilbillede */
+  main h1.info {
+    margin-top: -200px;
+    /* Mindre afstand fra toppen */
+    margin-left: 500px;
+    font-size: 25px;
+}
+.checked {
+    color: orange;
+  }
+  /* redigering af stjeneratting */
+.starrating{
+    color: var(--grå);
+    margin-right: 5%;
+    margin-left: 63%;
+  }
+  main h3.præferencer{
+    font-size: 25px;
+    color: #B23902;
+    /* Venstrestillet */
+    margin-left: 6px;
+    /* Juster venstre margen efter behov */
+    margin-bottom: 5px;
+    /* Mindre afstand mellem overskriften og billederne */
+    z-index: 2;
+    position: relative;
+    font-family: "Cinzel", serif;
+}
+main h3.præferencer {
+    margin-top: 5px;
+    /* Mindre afstand fra toppen */
+    margin-left: 475px;
+}
+
+#grilletlaks, 
+#boef{
+    display: none;
+}
+#onepot,
+#kyllingebryst{
+    display: none;
+}
+}
