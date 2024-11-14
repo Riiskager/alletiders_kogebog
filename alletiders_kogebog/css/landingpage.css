@@ -290,7 +290,7 @@ main{
     }
 
 
-    @media (max-width: 1024px)and(min-width:768px){
+    @media (max-width: 1024px){
         
 
     .logo{ 
@@ -372,6 +372,7 @@ main{
         .slide {
             padding-left: 18%;
         }
+     
         .slide img{
             width: 250px;
         }

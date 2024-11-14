@@ -349,7 +349,7 @@ h1{
     transform: rotate(45deg);
   }
 
-/* redigering af overskifen */
+/* redigering af overskiften */
 .overskifter{
     font-family: "Cinzel", serif;
     color: var(--brunroed);
@@ -362,6 +362,11 @@ h1{
 
 /* overskirfter til telefon */
 h3{
+    display: none;
+}
+
+/* infographic til tablet fjernet fra pc */
+#infographic_tablet{
     display: none;
 }
 
@@ -446,7 +451,7 @@ main{
         margin-bottom: 5%;
 }
 
-/* Display the swirls and center dumplings image */
+/* swirls og dumpling billeder */
 #swirl1{
     display: block;
     width: 20%;
@@ -463,9 +468,9 @@ main{
 
 #swirl2 {
     display: block;
-    width: 30%;
+    width: 20%;
     height: auto;
-    margin-right: -10%;
+    margin-right: 0%;
 }
 
 #infographic{
@@ -548,7 +553,7 @@ display: block;
 
 
 /*Tablet*/
-@media (max-width: 1024px)and(min-width:768px){
+@media (max-width: 1024px) and (min-width: 768px){
         
     .logo{ 
          position: absolute;
@@ -558,6 +563,7 @@ display: block;
         transform: translate(-50%, -50%);
         z-index: 2;
     } 
+
     .søge{
         left: 20%;
     }
@@ -571,9 +577,57 @@ display: block;
     }
     .header_img img{
         display: flex;
+        width: 100%;
     }
+
     .Tekst{
         width: 40%;
          }
+
+
+         
+/* site indghold redigering */
+
+#infographic{
+    display: none;
+}
+
+#infographic_tablet{
+    display: block;
+    margin-left: 1.5%;
+    width: 108%;
+    margin-bottom: 1.5%;
+}
+
+#dumplings{
+    width: 90%;
+    height: auto;
+    margin-left: 40%;
+}
+
+.billeder{
+    display: none;
+}
+
+.kolonne2{
+    width: 90%;
+}
+
+.fremgangsmåde{
+    margin-bottom: 1.5%;
+}
+
+.tekst{
+    margin-left: 1.5%;
+    width: 109%;
+}
+
+#ingredienser{
+    margin-left: -10%;
+}
+
+#Fremgangsmåde{
+    margin-left: 10%;
+}
 
          }
