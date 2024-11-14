@@ -412,7 +412,7 @@ main{
     .logo{
         width: 25%;
         left: 15%;
-        top: 7%;
+        top: 6%;
     }
     .burger{
         left: 85%
@@ -548,11 +548,11 @@ display: block;
 
 
 /*Tablet*/
-@media (max-width: 1024px){
+@media (max-width: 1024px)and(min-width:768px){
         
     .logo{ 
          position: absolute;
-        top: 10%;
+        top: 15%;
         left: 85%;
         width: 25%;
         transform: translate(-50%, -50%);
