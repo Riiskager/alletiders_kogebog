@@ -204,10 +204,16 @@ body {
     /* Mindre afstand mellem billederne og næste sektion */
 }
 
-/* Farve på stjernerne */
-.checked {
+/* Stil til stjernerne */
+.star-rating .fa-star {
+    color: #d0cfcb;
+    /* Sæt denne til din ønskede grå farve */
+}
+
+/* Farve til de "checked" stjerner */
+.star-rating .fa-star.checked {
     color: var(--lysorange);
-    /* Farven på de "checkede" stjerner */
+    /* Beholder din orange farve for checked stjerner */
 }
 
 /* Container for hvert billede og tekst */
@@ -386,12 +392,10 @@ footer {
 
     }
 
-
-    /* emil og ralle 
     .rundebilleder {
-        display: flex;
-        flex-wrap: wrap;
-    } */
+        margin-left: 6%;
+    }
+
     #nrfem {
         display: none;
     }
