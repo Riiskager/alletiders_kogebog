@@ -349,7 +349,7 @@ h1{
     transform: rotate(45deg);
   }
 
-/* redigering af overskifen */
+/* redigering af overskiften */
 .overskifter{
     font-family: "Cinzel", serif;
     color: var(--brunroed);
@@ -362,6 +362,11 @@ h1{
 
 /* overskirfter til telefon */
 h3{
+    display: none;
+}
+
+/* infographic til tablet fjernet fra pc */
+#infographic_tablet{
     display: none;
 }
 
@@ -559,7 +564,6 @@ display: block;
         z-index: 2;
     } 
 
-    
     .søge{
         left: 20%;
     }
@@ -588,6 +592,13 @@ display: block;
     display: none;
 }
 
+#infographic_tablet{
+    display: block;
+    margin-left: 1.5%;
+    width: 108%;
+    margin-bottom: 1.5%;
+}
+
 #dumplings{
     width: 90%;
     height: auto;
@@ -603,12 +614,12 @@ display: block;
 }
 
 .fremgangsmåde{
-    margin-bottom: 5%;
+    margin-bottom: 1.5%;
 }
 
 .tekst{
-    margin-left: 10%;
-    margin-right: -1.5%;
+    margin-left: 1.5%;
+    width: 109%;
 }
 
 #ingredienser{
