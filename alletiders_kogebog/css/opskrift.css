@@ -463,9 +463,9 @@ main{
 
 #swirl2 {
     display: block;
-    width: 30%;
+    width: 20%;
     height: auto;
-    margin-right: -10%;
+    margin-right: 0%;
 }
 
 #infographic{
@@ -548,7 +548,7 @@ display: block;
 
 
 /*Tablet*/
-@media (max-width: 1024px){
+@media (max-width: 1024px) and (min-width: 768px){
         
     .logo{ 
          position: absolute;
@@ -576,4 +576,14 @@ display: block;
         width: 40%;
          }
 
+
+/* site indghold redigering */
+#infographic{
+    display: none;
+}
+
+#dumplings{
+    width: 60%;
+    height: auto;
+}
          }
