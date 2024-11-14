@@ -446,7 +446,7 @@ main{
         margin-bottom: 5%;
 }
 
-/* Display the swirls and center dumplings image */
+/* swirls og dumpling billeder */
 #swirl1{
     display: block;
     width: 20%;
@@ -558,6 +558,8 @@ display: block;
         transform: translate(-50%, -50%);
         z-index: 2;
     } 
+
+    
     .søge{
         left: 20%;
     }
@@ -571,19 +573,50 @@ display: block;
     }
     .header_img img{
         display: flex;
+        width: 100%;
     }
+
     .Tekst{
         width: 40%;
          }
 
 
+         
 /* site indghold redigering */
+
 #infographic{
     display: none;
 }
 
 #dumplings{
-    width: 60%;
+    width: 90%;
     height: auto;
+    margin-left: 40%;
 }
+
+.billeder{
+    display: none;
+}
+
+.kolonne2{
+    width: 90%;
+}
+
+.fremgangsmåde{
+    margin-bottom: 5%;
+}
+
+.tekst{
+    margin-left: 10%;
+    margin-right: -1.5%;
+}
+
+#ingredienser{
+    margin-left: -10%;
+}
+
+#Fremgangsmåde{
+    margin-left: 10%;
+}
+
          }
