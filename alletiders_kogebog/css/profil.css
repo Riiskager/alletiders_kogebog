@@ -367,6 +367,10 @@ main h3.præferencer {
         display: flex; /* Vis mobil header */
         text-align: center;
     }
+    .headermobil img {
+        margin
+    }
+
     .logo{
         width: 25%;
         left: 15%;
@@ -529,7 +533,24 @@ main h3.præferencer {
     /* Mindre afstand fra toppen */
     margin-left: 115px;
 }
+#grilletlaks, 
+#boef{
+    display: none;
+}
+#onepot,
+#kyllingebryst{
+    display: none;
+}
+footer {
+    background-color: #e2903a;
+    padding: 20px;
+    color: #F6F6F6;
+    font-family: "Cinzel", serif;
+    position: absolute;
+   margin-top: auto;
+    width: 100%;
+}
+
 }
 /* ordne features */
-/* ordne antal billeder */
 /* ordne header */
