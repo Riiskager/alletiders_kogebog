@@ -1,59 +1,57 @@
+/* Nulstil margin og padding på alle elementer */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Definerer CSS-variabler til farver */
 :root {
-    /*Bestemmer vores standart farver*/
-    --grå: #d0cfcb;
-    --hvid: #F6F6F6;
-    --lysorange: #e2903a;
-    --morkorange: #EB5C00;
-    --brunroed: #B23902;
+    --grå: #d0cfcb; /* Grå farve */
+    --hvid: #F6F6F6; /* Hvid farve */
+    --lysorange: #e2903a; /* Lys orange farve */
+    --morkorange: #EB5C00; /* Mørk orange farve */
+    --brunroed: #B23902; /* Brunrød farve */
 }
 
+/* Styling af logoet */
 .logo {
-    /*Sætter logoet i midten af midten, og sørger for den ligger over alt*/
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    position: absolute; /* Absolut positionering */
+    top: 15%; /* Placerer logoet 15% fra toppen */
+    left: 50%; /* Centrerer logoet horisontalt */
+    transform: translate(-50%, -50%); /* Justerer for korrekt centrering */
+    z-index: 2; /* Sørger for, at logoet vises ovenpå andre elementer */
 }
 
+/* Styling af header */
 header {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Gør headerens layout fleksibelt */
+    justify-content: center; /* Centrerer indholdet horisontalt */
 }
 
-/*Sørger for vores billede i headeren kommer bag ved alt, og fylder helt ud på skærmen*/
+/* Styling af billeder i header */
 header img {
-    max-width: 100%;
-    z-index: -1;
+    max-width: 100%; /* Sørger for, at billedet fylder containerens bredde */
+    z-index: -1; /* Placerer billedet bag andre elementer */
 }
 
+/* Skjuler elementet med klassen 'headermobil' */
 .headermobil {
-    display: none;
+    display: none; /* Ingen visning */
 }
 
-.side1 {
-    display: none;
-}
-.side2 {
-    display: none;
+/* Skjuler elementerne med klasserne 'side1' og 'side2' */
+.side1, .side2 {
+    display: none; /* Ingen visning */
 }
 
-/*Vores søge ikon, sørger for cursor ændrer sig til pointer når du er over den*/
+/* Styling af søgeikonet */
 .søge {
-    position: absolute;
-    top: 40px;
-    right: 140px;
-    font-size: 30px;
-    color: var(--hvid);
-    z-index: 1;
-    cursor: pointer;
+    position: absolute; /* Absolut positionering */
+    top: 40px; /* Placerer ikonet 40px fra toppen */
+    right: 140px; /* Placerer ikonet 140px fra højre */
+    font-size: 30px; /* Skriftstørrelse */
+    color: var(--hvid); /* Brug af hvid farve fra variablerne */
 }
-
 
 .søgefelt {
     position: absolute;
@@ -102,7 +100,7 @@ header img {
 
 .søge i:hover input {
     opacity: 1;
-    transform: all 1s ease;
+    transition: all 1s ease;
 }
 
 .søge:hover .søgefelt {
@@ -167,7 +165,7 @@ header img {
 
 .burger i:hover ul {
     opacity: 1;
-    transform: all 1s ease;
+    transition: all 1s ease;
 }
 
 .dropdown ul li {
@@ -380,7 +378,7 @@ main h3.præferencer {
 
     .logo{
         height: auto;
-        width: -150%;
+        transform: translate(-150%);
         left: 25%;
         top: 10%;
     }
@@ -407,7 +405,7 @@ main{
 }
 .side1 {
     display: flex;
-    align-items: left;
+    justify-content: flex-start;
 }
 .side1 img{
     margin-top: 8%;
@@ -418,13 +416,13 @@ main{
 
 .side2{
     display: flex;
-    align-items: right;
+    justify-content: flex-end;
 }
 .side2 img{
     margin-top: -130%;
     height: 500px;
-    margin-left: 132%;
     width: 110px;
+    margin-right: -60%;
 }
 
 .tomprofil {
@@ -533,7 +531,6 @@ main h2.overskrift_retter {
   }
   /* tekst til profilbillede */
   main h1.info {
-    margin-top: px;
     /* Mindre afstand fra toppen */
     margin-left: 240px;
     font-size: 25px;
@@ -629,7 +626,7 @@ footer {
     /* 5 kolonner */
     gap: 20px;
     /* Afstand mellem billederne og rækkerne */
-    grid-row-gap: -20px;
+    grid-row-gap: 20px;
     /* Afstand mellem rækkerne */
     justify-items: center;
     /* Centrerer billederne horisontalt */
