@@ -102,7 +102,7 @@ header img {
 
 .søge i:hover input {
     opacity: 1;
-    transform: all 1s ease;
+    transition: all 1s ease;
 }
 
 .søge:hover .søgefelt {
@@ -167,7 +167,7 @@ header img {
 
 .burger i:hover ul {
     opacity: 1;
-    transform: all 1s ease;
+    transition: all 1s ease;
 }
 
 .dropdown ul li {
@@ -380,7 +380,7 @@ main h3.præferencer {
 
     .logo{
         height: auto;
-        width: -150%;
+        transform: translate(-150%);
         left: 25%;
         top: 10%;
     }
@@ -407,7 +407,7 @@ main{
 }
 .side1 {
     display: flex;
-    align-items: left;
+    justify-content: flex-start;
 }
 .side1 img{
     margin-top: 8%;
@@ -418,13 +418,13 @@ main{
 
 .side2{
     display: flex;
-    align-items: right;
+    justify-content: flex-end;
 }
 .side2 img{
     margin-top: -130%;
     height: 500px;
-    margin-left: 132%;
     width: 110px;
+    margin-right: -60%;
 }
 
 .tomprofil {
@@ -533,7 +533,6 @@ main h2.overskrift_retter {
   }
   /* tekst til profilbillede */
   main h1.info {
-    margin-top: px;
     /* Mindre afstand fra toppen */
     margin-left: 240px;
     font-size: 25px;
@@ -629,7 +628,7 @@ footer {
     /* 5 kolonner */
     gap: 20px;
     /* Afstand mellem billederne og rækkerne */
-    grid-row-gap: -20px;
+    grid-row-gap: 20px;
     /* Afstand mellem rækkerne */
     justify-items: center;
     /* Centrerer billederne horisontalt */
