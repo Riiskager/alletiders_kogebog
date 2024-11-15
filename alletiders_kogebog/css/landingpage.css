@@ -3,10 +3,10 @@
     padding: 0;
 }
 html{
-    scroll-behavior: smooth; /* Gør, at siden glider, når man scroller */
+    scroll-behavior: smooth;
 }
 
-:root{ /* Definerer standardfarver til hele dokumentet */
+:root{ /*Bestemmer vores standart farver*/
     --grå: #d0cfcb;
     --hvid: #F6F6F6;
     --lysorange: #e2903a;
@@ -14,26 +14,25 @@ html{
     --brunroed: #B23902;
 }
 
-.logo{ /* Centrerer logoet og placerer det øverst i midten */
+.logo{ /*Sætter logoet i midten af midten, og sørger for den ligger over alt*/
     position: absolute;
     top: 15%;
     left: 50%;
     width: 15%;
     transform: translate(-50%, -50%);
-    z-index: 2; /* Sørger for, at logoet er synligt over andre elementer */
+    z-index: 2;
 }
 header{
     display: flex;
-    justify-content: center; /* Centrerer headerens indhold */
+    justify-content: center;
 }
 
-/* Sørger for, at billedet i headeren fylder hele bredden og ligger bag alle elementer */
+/*Sørger for vores billede i headeren kommer bag ved alt, og fylder helt ud på skærmen*/
 header img { 
     max-width: 100%;
-    z-index: -1; /* Placerer billedet under alt andet */
-}
-
-/* Stil til søgeikonet, så cursoren ændrer sig, og det placeres til højre */
+    z-index: -1;
+  }
+  /*Vores søge ikon, sørger for cursor ændrer sig til pointer når du er over den*/
 .søge{
     position: absolute;
     top: 40px;
@@ -41,42 +40,45 @@ header img {
     font-size: 30px; 
     color: var(--hvid); 
     z-index: 1; 
-    cursor: pointer; /* Gør ikonet klikbart */
+    cursor: pointer;
 }
 
-.søgefelt{ /* Konfigurerer søgefeltet, så det ikke vises før hover */
+    /*Sørger for position af søgefelt*/
+.søgefelt{
     position: absolute;
     top: 5px;
     left: -250px;
     color: #f6f6f6;
-    display: none; /* Skjuler søgefeltet */
+    display: none;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    
 }
-
+ /*Starter animation af søgefelt*/
 .søgefelt::before{
-    content: ""; /* Pseudo-element, kan bruges til grafiske effekter */
+    content: "";
     position: absolute;
     top:-20px;
     left: 95px;
-    animation: slideSide 1s ease; /* Tilføjer animation */
+    animation: slideSide 1s ease;
 }
 
-.søgefelt input{ /* Styling til inputfeltet */
+ /*bestemmer indhold i søgefelt*/
+.søgefelt input{
     list-style: none;
     padding: 5px 20px;
     margin-right: 20px;
     text-align: center;
     background-color: var(--hvid);
-    animation: slideSide 1s ease; /* Glidende animation ved fremkomst */
+    animation: slideSide 1s ease;
     border: none;
     border-radius: 5px;
     font-weight: 600;
     font-family: "Cinzel", serif;
 }
-
-@keyframes slideSide{ /* Animation for søgefeltet */
+ /*Animation*/
+@keyframes slideSide{
     from{
         opacity:0;
         transform: translateX(10px);
@@ -86,17 +88,17 @@ header img {
         transform: translateX(0);
     }
 }
-
+/*Hover funktion*/
 .søge i:hover input{
     opacity: 1;
-    transform: all 1s ease; /* Giver en glidende effekt */
+    transform: all 1s ease;
 }
-
 .søge:hover .søgefelt{
-    display: flex; /* Viser søgefeltet, når man hover over søgeikonet */
+    display: flex;
 }
 
-.burger{ /* Stil til burger-ikonet */
+ /*Burger menu styling*/
+.burger{
     position: absolute;
     display: inline-block;
     top: 40px;
@@ -107,38 +109,39 @@ header img {
     text-decoration: none;
     cursor: pointer;
 }
-
-.dropdown{ /* Konfiguration af dropdown-menuen */
+ /*Dropdown menu*/
+.dropdown{
     position: absolute;
     top: 50px;
     left: -90px;
     color: #f6f6f6;
-    display: none; /* Skjuler menuen */
+    display: none;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    
 }
-
+ /*Hover animation*/
 .dropdown::before{
-    content: ""; /* Pseudo-element til pil eller grafisk element */
+    content: "";
     position: absolute;
     top:-20px;
     left: 95px;
     border: 10px solid transparent;
     border-bottom-color: rgba(0, 0, 0, 0.2);
-    animation: slideDown 1s ease; /* Animerer dropdown */
+    animation: slideDown 1s ease;
 }
-
-.dropdown ul{ /* Styling af menuindhold */
+ /*Styling af dropdown*/
+.dropdown ul{
     list-style: none;
     padding: 0;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
-    animation: slideDown 1s ease; /* Gør menuen glidende */
+    animation: slideDown 1s ease;
     border-radius: 5px;
 }
-
-@keyframes slideDown{ /* Animation til dropdown-menuen */
+ /*Animationen*/
+@keyframes slideDown{
     from{
         opacity:0;
         transform: translateY(-10px);
@@ -148,64 +151,54 @@ header img {
         transform: translateY(0);
     }
 }
-
-.burger:hover .dropdown{
-    display: flex; /* Viser dropdown-menuen ved hover */
+ /*Hover funktion*/
+.burger i:hover ul{
+    opacity: 1;
+    transform: all 1s ease;
 }
-
+ /*Tekst styling*/
 .dropdown ul li{
-    padding: 5px 40px; /* Afstand i menuen */
+    padding: 5px 40px;
 }
-
-.dropdown ul li a{ /* Styling til links i dropdown */
+ /*Tekst styling*/
+.dropdown ul li a{
     font-family: "Cinzel", serif;
     color: #F6F6F6;
     text-decoration: none;
     font-size: 17px;
     font-weight: 500;
 }
-
+.burger:hover .dropdown{
+    display: flex;
+}
 .dropdown li:hover{
-    background-color: rgba(0, 0, 0, 0.3); /* Fremhæver menuvalg */
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
+
+ /*Styling af baggrund og footer*/
 body{
-    background-color: #f6f6f6; /* Baggrundsfarve */
-}
+    background-color: #f6f6f6;
+  }
 
-footer{
-    background-color: #e2903a;
+  footer{
+    background-color:#e2903a;
     padding: 20px;
-    color: #F6F6F6;
-    margin-top: 10%; /* Giver afstand mellem footer og indhold */
-}
+    color:#F6F6F6;
+    margin-top: 10%;
+  }
 
-.footer p{
+  .footer p{
     font-family: Arial, Helvetica, sans-serif;
-} 
+  } 
+
 
 main{
-    justify-content: space-between; /* Laver jævn fordeling */
+    justify-content: space-between;
 }
 
-.carouse2 { /* Anden carousel, horisontal scrolling */
-    position: relative;
-    margin-top: 2%;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 3%;
-    overflow-x: scroll; /* Gør den scroller horisontalt */
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    z-index: 3;
-    right: 0;
-    margin-bottom: 5%;
-}
-.carouse2::-webkit-scrollbar{
-    display: none; /* Fjerner scrollbar */
-}
-
-.carousel { /* Første carousel med samme styling */
+ /*Sørger for at elementerne kan rykke ud over skærmbredten, men uden at kunne scrolle ud for at se dem*/
+  .carouse2 {
     position: relative;
     margin-top: 2%;
     display: flex;
@@ -215,17 +208,36 @@ main{
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     z-index: 3;
-}
+    right: 0;
+    margin-bottom: 5%;
+    }
+     /*Fjerner scrollbaren*/
+    .carouse2::-webkit-scrollbar{
+        display: none;
+    }
 
-main h1{
-    font-family: "Cinzel", serif;
-    color: #B23902;
-    font-size: x-large;
-    margin-left: 3%;
+
+  .carousel {
+    position: relative;
     margin-top: 2%;
-}
-
-.slide { /* Stil til hvert slide i carousel */
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    z-index: 3;
+    }
+     /*Font styling*/
+    main h1{
+        font-family: "Cinzel", serif;
+        color: #B23902;
+        font-size: x-large;
+        margin-left: 3%;
+        margin-top: 2%;
+    }
+     /*Styling af elementer inde i cousel og carou2*/
+  .slide {
     box-sizing: border-box;
     flex-shrink: 0;
     margin-bottom: 1rem;
@@ -234,54 +246,68 @@ main h1{
     color: #B23902;
     overflow: hidden;
     padding: 10px;
-}
-
-.slide img{
-    border-radius: 50%; /* Runde billeder */
-    transition: 0.5s ease;
-    object-fit: cover; /* Beskær billedet */
-}
-.slide img:hover{
-    transform: scale(1.05); /* Zoomer ind ved hover */
-    cursor: pointer;
-}
-
-.carousel::-webkit-scrollbar{
-    display: none;
-}
-
-.række3{ /* Styling af række 3 */
-    background-color: #e2903a;
-    display: flex;
-    border-bottom: 8px solid #d0cfcb;
-}
-.række3 img{
-    border-radius: 50%;
-    margin: 5% 10% 5% 10%;
-    width: 500px;
-}
-
-.Tekst h1{
-    color: #F6F6F6;
+    }
+.slide p{
     font-family: "cinzel", serif;
     font-weight: 500;
-    margin: 20px 20px 0 20px;
-    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+}
+.opskriftmængde{
+    display: flex;
+    justify-content: center;
 }
 
-.Tekst p{
-    color: #F6F6F6;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: x-large;
-    margin: 20px 20px 0 20px;
-}
+    
 
-/* Media queries til forskellige skærmstørrelser */
-@media (max-width: 1024px){
-    /* Justerer logo og ikoner til mindre skærme */
+    .slide img{
+        border-radius: 50%;
+        transition: 0.5s ease;
+        object-fit: cover;
+    }
+     /*Zoom når man hover*/
+    .slide img:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .carousel::-webkit-scrollbar{
+        display: none;
+    }
+
+     /*Styling af dumpling sektion*/
+    .række3{
+        background-color: #e2903a;
+        display: flex;
+        border-bottom: 8px solid #d0cfcb;
+    }
+    .række3 img{
+        border-radius: 50%;
+        margin: 5% 10% 5% 10%;
+        width: 500px;
+    }
+    .Tekst h1{
+        color: #F6F6F6;
+        font-family: "cinzel", serif;
+        font-weight: 500;
+        margin: 20px 20px 0 20px;
+        font-size: xx-large;
+
+    }
+    .Tekst p{
+        color: #F6F6F6;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size: x-large;
+        margin: 20px 20px 0 20px;
+    }
+
+     /*Tablet starter her*/
+    @media (max-width: 1024px){
+        
+        /*Ompositionering af header elementer*/
     .logo{ 
-        position: absolute;
+         position: absolute;
         top: 10%;
         left: 85%;
         width: 25%;
@@ -302,4 +328,69 @@ main h1{
     .header_img img{
         display: flex;
     }
-}
+    .Tekst{
+        width: 40%;
+    }
+    .række3 img{
+        width: 400px;
+        margin: 5% 0 5% 10%;
+        
+    }
+    }
+     /*Telefon starter her*/
+    @media (max-width: 768px){
+         /*Omstyling af header elementer*/
+        .logo{
+            width: 25%;
+            left: 15%;
+            top: 7%;
+        }
+        .burger{
+            left: 85%
+        }
+        .søge{
+            left: 75%
+        }
+        .søgefelt{
+            left: -200px;
+        }
+        .søgefelt input{
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+        body{
+            background-image: url(../img/telefon_baggrund.png);
+            background-size: 100%;
+        }
+         /*Ændring af hvordan den displayer dumpling sektionen*/
+         .række3{
+        display: block;
+        align-items: center;
+    }
+        .række3 h1{
+            width: 100%;
+    }
+        .række3 img{
+            width: 100%;
+            margin: 0;
+    }
+        .række2{
+            display: none;
+        }
+        .carousel{
+            display: block;
+        }
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+        .slide {
+            padding-left: 18%;
+        }
+    
+        .slide img{
+            width: 250px;
+        }
+
+    }
+ 
